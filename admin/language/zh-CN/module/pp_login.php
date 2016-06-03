@@ -1,5 +1,4 @@
 <?php
-
 // Heading
 $_['heading_title']        = 'PayPal(贝宝)账号登录';
 

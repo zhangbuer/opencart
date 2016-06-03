@@ -1,5 +1,4 @@
 <?php
-
 // Text
 $_['text_approve_subject']      = '%s - 您的账户已被激活！';
 $_['text_approve_welcome']      = '欢迎访问和在 %s 注册！';

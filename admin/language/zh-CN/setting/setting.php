@@ -1,5 +1,4 @@
 <?php
-
 // Heading
 $_['heading_title']                    = '系统设置';
 
@@ -19,32 +18,24 @@ $_['text_captcha']                     = '验证码';
 $_['text_register']                    = '注册';
 $_['text_guest']                       = '游客结帐';
 $_['text_return']                      = '退货';
-$_['text_review']                      = '商品评论';
 $_['text_contact']                     = '联系';
-$_['text_comment']                     = '博客评论';
 $_['text_shipping']                    = '配送地址';
 $_['text_payment']                     = '账单地址';
 $_['text_mail']                        = 'Mail';
 $_['text_smtp']                        = 'SMTP';
-$_['text_baidu']                       = '百度';
-$_['text_google']                      = '谷歌';
 $_['text_general']                     = '常规';
 $_['text_security']                    = '安全';
 $_['text_upload']                      = '上传';
 $_['text_error']                       = '错误处理';
-$_['text_baidu']                	   = '百度参数';
-$_['text_weidian']              	   = '微店参数';
-$_['text_youzan']               	   = '有赞微商城参数';
-$_['text_baidu_signup']                = '登录您在 <a href="http://zhanzhang.baidu.com" target="_blank"><u>百度站长平台</u></a> 的账户，然后创建您的网站资料，然后复制并粘贴API到此处。';
-$_['text_weidian_signup']              = '请到<a href="http://open.weidian.com" target="_blank"><u>微店开放平台(http://open.weidian.com)</u></a>登录微店平台后创建自用型管理应用后获得。';
-$_['text_youzan_signup']               = '登录您在 <a href="http://www.youzan.com" target="_blank"><u>有赞微商城</u></a> 的账户，点击左侧的【有赞开放API】，点击【启用】后获得 AppID 和 AppSecret';
-
-
 // Entry
+$_['entry_meta_title']                = 'Meta Title';
+$_['entry_meta_description']          = 'Meta Tag Description';
+$_['entry_meta_keyword']              = 'Meta Tag Keywords';
+$_['entry_layout']                    = 'Default Layout';
+$_['entry_theme']                     = 'Theme';
 $_['entry_name']                       = '商店名称';
 $_['entry_owner']                      = '商店拥有者';
 $_['entry_address']                    = '地址';
-$_['entry_miit']                       = '网站备案号';
 $_['entry_geocode']                    = '地理代码';
 $_['entry_email']                      = 'E-Mail';
 $_['entry_telephone']                  = '电话';
@@ -53,11 +44,6 @@ $_['entry_image']                      = '图像';
 $_['entry_open']                       = '营业时间';
 $_['entry_comment']                    = '备注';
 $_['entry_location']                   = '店铺位置';
-$_['entry_meta_title']                 = 'Meta 标题';
-$_['entry_meta_description']           = 'Meta Tag 描述';
-$_['entry_meta_keyword']               = 'Meta Tag 关键词';
-$_['entry_layout']                     = '默认布局排版';
-$_['entry_theme']                      = '模板主题';
 $_['entry_country']                    = '国家';
 $_['entry_zone']                       = '州/省/地区';
 $_['entry_language']                   = '语言';
@@ -83,7 +69,6 @@ $_['entry_customer_price']             = '登陆后显示价格';
 $_['entry_login_attempts']             = '最大登陆尝试次数';
 $_['entry_account']                    = '账户条款';
 $_['entry_account_mail']               = '发送新注册用户邮件';
-$_['entry_api']                        = 'API 用户';
 $_['entry_cart_weight']                = '购物车页面显示重量';
 $_['entry_checkout_guest']             = '游客结账';
 $_['entry_checkout']                   = '结账条款';
@@ -94,6 +79,7 @@ $_['entry_complete_status']            = '已完成订单状态';
 $_['entry_fraud_status']               = '欺骗订单状态';
 $_['entry_order_mail']                 = '订单提醒邮件';
 $_['entry_mail_alert']                 = '附加提醒邮件地址';
+$_['entry_api']                       = 'API User';
 $_['entry_stock_display']              = '显示库存';
 $_['entry_stock_warning']              = '显示脱销警告';
 $_['entry_stock_checkout']             = '脱销结账';
@@ -108,8 +94,6 @@ $_['entry_captcha']                    = '验证码';
 $_['entry_captcha_page']               = '验证码页面';
 $_['entry_logo']                       = '网店图标';
 $_['entry_icon']                       = 'Icon 图标';
-$_['entry_width']                      = '宽度';
-$_['entry_height']                     = '高度';
 $_['entry_ftp_hostname']               = 'FTP 主机';
 $_['entry_ftp_port']                   = 'FTP 端口';
 $_['entry_ftp_username']               = 'FTP 用户名';
@@ -137,14 +121,8 @@ $_['entry_compression']                = '输出压缩等级';
 $_['entry_error_display']              = '显示错误';
 $_['entry_error_log']                  = '日志错误';
 $_['entry_error_filename']             = '错误日志文件名';
-$_['entry_google_analytics']           = '百度或谷歌分析代码';
-$_['entry_map_select']           	   = '使用地图';
+
 $_['entry_status']                     = '状态';
-$_['entry_baidu_api']                  = '百度API';
-$_['entry_weidian_appkey']             = '微店 APPKEY';
-$_['entry_weidian_secret']             = '微店 Secret';
-$_['entry_youzan_appid']               = '有赞 APPID';
-$_['entry_youzan_appsecret']           = '有赞 APPSECRET';
 
 // Help
 $_['help_geocode']                     = '请手动输入您的地理代码，百度地图代码请访问 http://api.map.baidu.com/lbsapi/creatmap/ 获取。';
@@ -153,8 +131,6 @@ $_['help_comment']                     = '输入一些特殊的提示性信息�
 $_['help_location']                    = '您物理店铺的实际位置，将显示在联系我们表单页面。';
 $_['help_currency']                    = '改变默认货币。如需立刻看到货币汇率变化，请清除浏览器缓存。';
 $_['help_currency_auto']               = '设定网站每天自动更新汇率。';
-$_['help_product_limit'] 	           = '每页显示商品数量，如商品列表页、分类商品列表页等。';
-$_['help_product_description_length']  = '在商品列表页，商品简短描述字符限制。';
 $_['help_limit_admin']   	           = '网站后台每页显示的条目数，如订单页、会员页面等。';
 $_['help_product_count']               = '在网站前台顶部的分类下拉菜单中，显示子分类中的商品数量。注意，如果网站包含有较多的子分类，这将可能导致网站运行的缓慢。';
 $_['help_review']       	           = '启用/禁用新评论的输入，以及现有评论的显示。';
@@ -172,7 +148,6 @@ $_['help_login_attempts']              = '尝试登录失败最大次数，此�
 $_['help_account']                     = '会员注册前必须同意的条款。';
 $_['help_account_mail']                = '新会员注册时发送提醒邮件给网站管理员。';
 $_['help_invoice_prefix']              = '设定发票前缀 (例如 INV-2011-00)。发票的id将跟随唯一的前缀从1开始而自动添加。';
-$_['help_api']                         = '管理员将是哟功能的默认 API 用户。';
 $_['help_cart_weight']                 = '在购物车页面显示重量。';
 $_['help_checkout_guest']              = '允许游客结账，当购物车中有下载类商品时无效。';
 $_['help_checkout']                    = '结账时会员必须同意的条款。';
@@ -198,6 +173,7 @@ $_['help_ftp_root']                    = '您安装OpenCart系统时安装所在
 $_['help_mail_protocol']               = '只需选择\'MAIL\' 除非您的主机已禁用PHP的邮件功能。';
 $_['help_mail_parameter']              = '当使用 \'MAIL\', 在此可增加额外的邮件地址(如 "-femail@storeaddress.com"。';
 $_['help_mail_smtp_hostname']          = '如果需要安全链接，则在前面添加 \'tls://\' 前缀。 (例如 tls://smtp.gmail.com).';
+$_['help_mail_smtp_password']         = 'For gmail you might need to setup a application specific password here: https://security.google.com/settings/security/apppasswords.';
 $_['help_mail_alert']                  = '任何您想收到本站邮件的额外信箱。 (请用逗号分开)';
 $_['help_secure']                      = '检查你的服务器是否安装了SSL认证，如果安装了，可以使用SSL。';
 $_['help_shared']                      = '你可以让各个网店之间的购物车共享数据。';
@@ -210,17 +186,16 @@ $_['help_maintenance']                 = '本功能将在前台首页显示系�
 $_['help_password']                    = '允许已经遗忘的密码登陆系统。Admin的遗忘密码可否被使用。如果系统检测到黑客攻击，则自动关闭此功能。';
 $_['help_encryption']                  = '请提供一个密钥, 让处理订单时可加密个人的资料。';
 $_['help_compression']                 = 'GZIP 可更有效地转移到要求的客户端。压缩级别必须在0 - 9';
-$_['help_google_analytics']            = '登录您的<a onclick="window.open(\'http：//www.google.com/analytics/\');"><u>Google Analytics</u></a>账户，或者登录到您的<a onclick="window.open(\'http：//tongji.baidu.coms/\');"><u>百度统计</u></a>账户，然后创建您的网店概述拷贝粘贴统计代码到框内。';
 
 // Error
 $_['error_warning']                    = '警告:请仔细检查相关错误！';
 $_['error_permission']                 = '警告: 无权限修改系统设置！';
+$_['error_meta_title']                = 'Meta 标题必须为3-32字符！';
 $_['error_name']                       = '商店名称必须为3-32字符！';
 $_['error_owner']                      = '商店拥有者必须为3-64字符！';
 $_['error_address']                    = '商店地址必须为10-256字符！';
 $_['error_email']                      = 'E-Mail 地址无效！';
 $_['error_telephone']                  = '电话号码必须为3-32字符！';
-$_['error_meta_title']                 = 'Meta 标题必须为3-32字符！';
 $_['error_limit']       	           = '限制数量必须填写！';
 $_['error_login_attempts']       	   = '登录失败次数必须大于0！';
 $_['error_customer_group_display']     = '若使用此特色，必须包含默认会员等级！';

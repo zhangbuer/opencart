@@ -1,5 +1,4 @@
 <?php
-
 // Text
 $_['text_subject']       = '%s - 退货更新 %s';
 $_['text_return_id']     = '退货 ID:';

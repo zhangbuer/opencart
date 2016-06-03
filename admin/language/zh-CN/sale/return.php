@@ -1,5 +1,4 @@
 <?php
-
 // Heading
 $_['heading_title']       = '商品退货';
 
@@ -31,7 +30,8 @@ $_['column_action']        = '操作';
 $_['entry_customer']      = '会员';
 $_['entry_order_id']      = '订单 ID';
 $_['entry_date_ordered']  = '订单日期';
-$_['entry_fullname']      = '姓名';
+$_['entry_firstname']     = 'First Name';
+$_['entry_lastname']      = 'Last Name';
 $_['entry_email']         = 'E-Mail';
 $_['entry_telephone']     = '电话';
 $_['entry_product']       = '商品';
@@ -54,7 +54,8 @@ $_['help_product']        = '(输入时自动筛选结果)';
 $_['error_warning']       = '警告: 请详细检查表单错误！';
 $_['error_permission']    = '警告: 无权限修改退货！';
 $_['error_order_id']      = '订单 ID 必填！';
-$_['error_fullname']      = '姓名必须为1-32字符！';
+$_['error_firstname']     = 'First Name must be between 1 and 32 characters!';
+$_['error_lastname']      = 'Last Name must be between 1 and 32 characters!';
 $_['error_email']         = 'E-Mail 地址无效！';
 $_['error_telephone']     = '电话必须为3-32字符！';
 $_['error_product']       = '商品名称必须为3-255字符！';

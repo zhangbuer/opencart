@@ -1,5 +1,4 @@
 <?php
-
 // Heading
 $_['heading_title']     = '推广会员佣金统计报告';
 

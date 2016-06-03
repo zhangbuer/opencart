@@ -1,5 +1,4 @@
 <?php
-
 // header
 $_['heading_title']  = '重置您的密码';
 

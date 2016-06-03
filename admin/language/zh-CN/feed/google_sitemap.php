@@ -1,5 +1,4 @@
 <?php
-
 // Heading
 $_['heading_title']    = '百度 / 谷歌网站地图';
 

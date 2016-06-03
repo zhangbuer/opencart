@@ -29,19 +29,20 @@ $_['entry_width']                      = '宽度';
 $_['entry_height']                     = '高度';
 
 // Help
-$_['help_directory'] 	               = '该字段仅为了使得旧模板主题与新模板系统的对接。可以设定模板目录以使用此处的尺寸设置。';
-$_['help_product_limit'] 	           = '每页显示商品数量，如商品列表页、分类商品列表页等。';
+$_['help_directory']                   = '该字段仅为了使得旧模板主题与新模板系统的对接。可以设定模板目录以使用此处的尺寸设置。';
+$_['help_product_limit']               = '每页显示商品数量，如商品列表页、分类商品列表页等。';
 $_['help_product_description_length']  = '在商品列表页，商品简短描述字符限制。';
+
 // Error
 $_['error_permission']                 = '警告: 无权限修改默认店铺主题！';
-$_['error_limit']       	           = '商品数量必填！';
-$_['error_image_thumb']          	   = '请输入商品页主图大小！';
-$_['error_image_popup']         	   = '请输入商品放大图片大小！';
-$_['error_image_product']        	   = '请输入商品页面中的图片大小！';
-$_['error_image_category']       	   = '请输入商品分类中的图片大小！';
-$_['error_image_additional']     	   = '请输入附加商品图像尺寸！';
-$_['error_image_related']        	   = '请输入关联商品图像尺寸！';
-$_['error_image_compare']        	   = '请输入对比商品图像尺寸！';
-$_['error_image_wishlist']       	   = '请输入收藏商品图像尺寸！';
-$_['error_image_cart']           	   = '请输入购物车中的商品图像尺寸！';
+$_['error_limit']                      = '商品数量必填！';
+$_['error_image_thumb']                = '请输入商品页主图大小！';
+$_['error_image_popup']                = '请输入商品放大图片大小！';
+$_['error_image_product']              = '请输入商品页面中的图片大小！';
+$_['error_image_category']             = '请输入商品分类中的图片大小！';
+$_['error_image_additional']           = '请输入附加商品图像尺寸！';
+$_['error_image_related']              = '请输入关联商品图像尺寸！';
+$_['error_image_compare']              = '请输入对比商品图像尺寸！';
+$_['error_image_wishlist']             = '请输入收藏商品图像尺寸！';
+$_['error_image_cart']                 = '请输入购物车中的商品图像尺寸！';
 $_['error_image_location']             = '网店图标尺寸必填！';

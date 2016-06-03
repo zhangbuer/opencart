@@ -1,5 +1,4 @@
 <?php
-
 // Heading
 $_['heading_title']    = '库存状态';
 

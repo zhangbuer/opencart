@@ -1,5 +1,4 @@
 <?php
-
 // header
 $_['heading_title']  = '系统管理';
 

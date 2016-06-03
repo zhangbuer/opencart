@@ -1,5 +1,4 @@
 <?php
-
 // Heading
 $_['heading_title']      = '制造商/品牌';
 

@@ -18,8 +18,8 @@ $_['column_action']          = '操作';
 // Entry
 $_['entry_name']             = '分类名称';
 $_['entry_description']      = '描述';
-$_['entry_meta_title'] 	     = 'Meta Tag 标题';
-$_['entry_meta_keyword'] 	 = 'Meta Tag 关键词';
+$_['entry_meta_title']       = 'Meta Tag 标题';
+$_['entry_meta_keyword']     = 'Meta Tag 关键词';
 $_['entry_meta_description'] = 'Meta Tag 描述';
 $_['entry_keyword']          = 'SEO URL';
 $_['entry_parent']           = '上一级';

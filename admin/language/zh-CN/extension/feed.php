@@ -1,5 +1,4 @@
 <?php
-
 // Heading
 $_['heading_title']    = '输出共享';
 

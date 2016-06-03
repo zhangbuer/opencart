@@ -77,4 +77,4 @@ $_['help_credits']                            = 'Balance of the credits availabl
 
 // Error
 $_['error_permission']                        = 'Warning: You do not have permission to modify FraudLabs Pro settings!';
-$_['error_key']		                            = 'API Key Required!';
+$_['error_key']                               = 'API Key Required!';

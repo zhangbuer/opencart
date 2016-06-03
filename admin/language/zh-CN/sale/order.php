@@ -121,13 +121,11 @@ $_['entry_date_added']           = '创建日期';
 $_['entry_date_modified']        = '修改日期';
 $_['entry_shipping_telephone']   = '收件人电话';
 
-// Error
-$_['error_warning']              = '警告: 請詳細檢查錯誤！';
-$_['error_permission']           = '警告: 無權限修改訂單！';
-$_['error_action']               = '警告: 無法完成此操作！';
-$_['error_filetype']			 = '无效文件类型!';
-
 // Help
 $_['help_override']              = 'If the customers order is being blocked from changing the order status due to a anti-fraud extension enable override.';
 
-
+// Error
+$_['error_warning']              = '警告: 请详细检查错误！';
+$_['error_permission']           = '警告: 无权限修改订单！';
+$_['error_action']               = '警告: 无法完成此操作！';
+$_['error_filetype']             = '无效文件类型!';

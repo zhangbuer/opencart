@@ -1,5 +1,4 @@
 <?php
-
 // Heading
 $_['heading_title']    = '市场推广统计报告';
 
