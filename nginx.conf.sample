@@ -1,0 +1,47 @@
+# Example configuration:
+# upstream fastcgi_backend {
+#    # use tcp connection
+#    # server  127.0.0.1:9000;
+#    # or socket
+#    server   unix:/var/run/php5-fpm.sock;
+# }
+# server {
+#    listen 80;
+#    server_name opencart.dev;
+#    set $OC_ROOT /var/www/opencart;
+#    set $OC_MODE developer;
+#    include /var/www/opencart/nginx.conf.sample;
+# }
+
+root $OC_ROOT;
+
+index index.php;
+autoindex off;
+charset off;
+
+add_header 'X-Content-Type-Options' 'nosniff';
+add_header 'X-XSS-Protection' '1; mode=block';
+
+location / {
+    try_files $uri @opencart;
+}
+
+location @opencart {
+    rewrite ^/(.+)$ /index.php?_route_=$1 last;
+}
+
+location /admin/ { 
+    index index.php; 
+}
+
+location ~* (\.(tpl|ini))$ {
+    deny all;
+}
+
+location ~ \.php$ {
+    try_files $uri =404;
+    fastcgi_pass   fastcgi_backend;
+    fastcgi_index index.php;
+    fastcgi_param  SCRIPT_FILENAME  $document_root$fastcgi_script_name;
+    include        fastcgi_params;
+}
