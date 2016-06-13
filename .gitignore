@@ -3,3 +3,4 @@
 /.project
 /.buildpath
 /admin/config.php
+/image/cache/*.php
