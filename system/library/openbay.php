@@ -10,12 +10,11 @@ final class Openbay {
 		$this->getInstalled();
 
 		foreach ($this->installed_markets as $market) {
-			$class = '\openbay\\'. ucfirst($market);
-
+			$class = ucfirst($market);
 			$this->{$market} = new $class($registry);
 		}
 
-		$this->logger = new \Log('openbay.log');
+		$this->logger = new Log('openbay.log');
 	}
 
 	public function __get($name) {
@@ -238,8 +237,8 @@ final class Openbay {
 		$this->load->model('checkout/order');
 		$order_info = $this->model_checkout_order->getOrder($order_id);
 
-		$language = new Language($order_info['language_code']);
-		$language->load($order_info['language_code']);
+		$language = new Language($order_info['language_directory']);
+		$language->load($order_info['language_directory']);
 		$language->load('mail/order');
 
 		$order_status = $this->db->query("SELECT `name` FROM " . DB_PREFIX . "order_status WHERE order_status_id = '" . (int)$order_status_id . "' AND language_id = '" . (int)$this->config->get('config_language_id') . "' LIMIT 1")->row['name'];
@@ -275,7 +274,7 @@ final class Openbay {
 			}
 		}
 
-		if (isset($order_voucher_query) && is_array($order_voucher_query)) {
+		if(isset($order_voucher_query) && is_array($order_voucher_query)) {
 			foreach ($order_voucher_query->rows as $voucher) {
 				$text .= '1x ' . $voucher['description'] . ' ' . $this->currency->format($voucher['amount'], $order_info['currency_code'], $order_info['currency_value']);
 			}
@@ -295,14 +294,18 @@ final class Openbay {
 			$text .= $order_info['comment'] . "\n\n";
 		}
 
-		$mail = new \Mail();
-		$mail->protocol = $this->config->get('config_mail_protocol');
-		$mail->parameter = $this->config->get('config_mail_parameter');
-		$mail->smtp_hostname = $this->config->get('config_mail_smtp_hostname');
-		$mail->smtp_username = $this->config->get('config_mail_smtp_username');
-		$mail->smtp_password = html_entity_decode($this->config->get('config_mail_smtp_password'), ENT_QUOTES, 'UTF-8');
-		$mail->smtp_port = $this->config->get('config_mail_smtp_port');
-		$mail->smtp_timeout = $this->config->get('config_mail_smtp_timeout');
+		if (version_compare(VERSION, '2.0.2', '<')) {
+			$mail = new Mail($this->config->get('config_mail'));
+		} else {
+			$mail = new Mail();
+			$mail->protocol = $this->config->get('config_mail_protocol');
+			$mail->parameter = $this->config->get('config_mail_parameter');
+			$mail->smtp_hostname = $this->config->get('config_mail_smtp_hostname');
+			$mail->smtp_username = $this->config->get('config_mail_smtp_username');
+			$mail->smtp_password = html_entity_decode($this->config->get('config_mail_smtp_password'), ENT_QUOTES, 'UTF-8');
+			$mail->smtp_port = $this->config->get('config_mail_smtp_port');
+			$mail->smtp_timeout = $this->config->get('config_mail_smtp_timeout');
+		}
 
 		$mail->setTo($this->config->get('config_email'));
 		$mail->setFrom($this->config->get('config_email'));
@@ -315,7 +318,7 @@ final class Openbay {
 		$emails = explode(',', $this->config->get('config_alert_emails'));
 
 		foreach ($emails as $email) {
-			if ($email && filter_var($email, FILTER_VALIDATE_EMAIL)) {
+			if ($email && preg_match('/^[^\@]+@.*.[a-z]{2,15}$/i', $email)) {
 				$mail->setTo($email);
 				$mail->send();
 			}
