@@ -98,11 +98,13 @@
                                 <?php foreach ($option['product_option_value'] as $option_value) { ?>
                                     <div class="radio">
                                         <label>
-                                            <input type="radio" name="option[<?php echo $option['product_option_id']; ?>]" value="<?php echo $option_value['product_option_value_id']; ?>" />
+                                            <input type="radio" name="option[<?php echo $option['product_option_id']; ?>]" value="<?php echo $option_value['product_option_value_id']; ?>" price="<?php echo $option_value['price']; ?>"/>
                                             <?php echo $option_value['name']; ?>
+                                            <!--
                                             <?php if ($option_value['price']) { ?>
                                                 (<?php echo $option_value['price_prefix']; ?><?php echo $option_value['price']; ?>)
-                                            <?php } ?>
+                                            <?php } ?> 
+                                            -->
                                         </label>
                                     </div>
                                 <?php } ?>
@@ -336,4 +338,13 @@
     </div>
 </div>
 
-
+<script>
+$(function(){
+    var defaultPrice = $('#product input[type=radio]:first').attr('price');
+    undefined !== defaultPrice && $('.text-price').text(defaultPrice);
+    $('#product input[type=radio]').click(function(){
+        $('.text-price').text($(this).attr('price'));
+    });
+    
+});
+</script>
