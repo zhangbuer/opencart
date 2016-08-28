@@ -1,5 +1,10 @@
-/config.php
-/.settings
-/.project
 /.buildpath
+/.project
+/.settings
 /admin/config.php
+/config.php
+/image/cache/*
+/system/cache/*
+/system/logs/*.log
+/system/storage/logs/*.log
+
