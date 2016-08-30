@@ -5,6 +5,8 @@
 /config.php
 /image/cache/*
 /system/cache/*
+/image/catalog/*
 /system/logs/*.log
+/system/storage/cache/cache.*
 /system/storage/logs/*.log
 
