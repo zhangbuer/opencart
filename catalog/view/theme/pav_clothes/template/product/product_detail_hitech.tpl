@@ -256,6 +256,7 @@
         <?php if ($review_status) { ?>
             <li><a href="#tab-review" data-toggle="tab"><?php echo $tab_review; ?></a></li>
         <?php } ?>
+        <li><a href="#tab-guarantee" data-toggle="tab">Guarantee</a></li>
     </ul>
     <div class="tab-content">
         <div class="tab-pane active" id="tab-description"><?php echo $description; ?></div>
@@ -335,6 +336,21 @@
 
             </div>
         <?php } ?>
+        <div class="tab-pane" id="tab-guarantee">
+        <pre>
+        1. 100 Unprocessed 7A Virgin Human Hair
+
+        2. 7 Days Exchange Or Refund Policy
+
+        3. Ship in 24 Hours Guarantee(Except holidays)
+
+        4. Service life At least one year With Proper Care
+
+        5. Can Be Permed Dyed Bleached
+
+        6. Unit Weight 100G
+        </pre>
+        </div>
     </div>
 </div>
 

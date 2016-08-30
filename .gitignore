@@ -4,8 +4,8 @@
 /admin/config.php
 /config.php
 /image/cache/*
-/system/cache/*
 /image/catalog/*
+/system/cache/*
 /system/logs/*.log
 /system/storage/cache/cache.*
 /system/storage/logs/*.log
