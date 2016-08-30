@@ -27,9 +27,9 @@ location / {
 }
 
 location @opencart {
-    rewrite ^/sitemap.xml$ index.php?route=feed/google_sitemap last;
-    rewrite ^/googlebase.xml$ index.php?route=feed/google_base last;
-    rewrite ^/system/download/(.*) index.php?route=error/not_found last;
+    rewrite ^/sitemap.xml$ /index.php?route=feed/google_sitemap last;
+    rewrite ^/googlebase.xml$ /index.php?route=feed/google_base last;
+    rewrite ^/system/download/(.*) /index.php?route=error/not_found last;
     rewrite ^/(.+)$ /index.php?_route_=$1 last;
 }
 
