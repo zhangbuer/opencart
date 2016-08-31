@@ -1578,10 +1578,11 @@ textarea.form-control {
 .checkbox {
   display: block;
   min-height: 20px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding-left: 20px;
+  margin: 5px;
+  padding: 0 5px 0 20px;
   vertical-align: middle;
+  float: left;
+  border: 1px solid #6e6e72;
 }
 .radio label,
 .checkbox label {
@@ -1595,12 +1596,12 @@ textarea.form-control {
 .checkbox input[type="checkbox"],
 .checkbox-inline input[type="checkbox"] {
   float: left;
-  margin-left: -20px;
+  margin-left: -16px;
 }
-.radio + .radio,
+/*.radio + .radio,
 .checkbox + .checkbox {
   margin-top: -5px;
-}
+}*/
 .radio-inline,
 .checkbox-inline {
   display: inline-block;
