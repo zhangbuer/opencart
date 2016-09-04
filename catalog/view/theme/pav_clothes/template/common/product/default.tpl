@@ -36,7 +36,7 @@
 				<?php if ($product['price']) { ?>
 					 <div class="price">
 					 	<?php if (!$product['special']) {  ?>
-							<span class="price"><?php echo $product['price']; ?></span>
+							<span class="price"><?php echo $product['min_price'] ?>&nbsp;-&nbsp;<?php echo $product['max_price'] ?></span>
 							<?php if( preg_match( '#(\d+).?(\d+)#',  $product['price'], $p ) ) { ?> 
 							<meta content="<?php echo $p[0]; ?>" itemprop="price">
 							<?php } ?>

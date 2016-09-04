@@ -378,8 +378,10 @@ class ModelCatalogProduct extends Model {
 
 		foreach ($query->rows as $result) {
 			$product_data[$result['related_id']] = $this->getProduct($result['related_id']);
+			// add min max price
+			$price_query = $this->db->query("SELECT MIN(price) as min_price, MAX(price) as max_price FROM " . DB_PREFIX . "product_option_value WHERE product_id = ".$result['product_id']);
+			$price_query && $product_data[$result['product_id']] = array_merge($product_data[$result['product_id']], $price_query->row);
 		}
-
 		return $product_data;
 	}
 
