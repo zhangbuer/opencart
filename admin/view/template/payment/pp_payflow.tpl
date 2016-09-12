@@ -35,7 +35,7 @@
             </div>
           </div>
           <div class="form-group required">
-            <label class="col-sm-2 control-label" for="entry-user"><span data-toggle="tooltip" title="<?php echo $help_usere; ?>"><?php echo $entry_user; ?></span></label>
+            <label class="col-sm-2 control-label" for="entry-user"><span data-toggle="tooltip" title="<?php echo $help_user; ?>"><?php echo $entry_user; ?></span></label>
             <div class="col-sm-10">
               <input type="text" name="pp_payflow_user" value="<?php echo $pp_payflow_user; ?>" placeholder="<?php echo $entry_user; ?>" id="entry-user" class="form-control"/>
               <?php if ($error_user) { ?>
