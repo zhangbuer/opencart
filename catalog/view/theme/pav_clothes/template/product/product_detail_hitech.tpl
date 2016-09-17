@@ -1,18 +1,18 @@
-<?php 
-    
+<?php
+
     $mode = 'default';
     $cols = array( 'default' => array(6,6),
                    'horizontal' => array(4,6)
-    ); 
-    $cols = $cols[$mode];     
+    );
+    $cols = $cols[$mode];
 ?>
 <?php $olang = $this->registry->get('language'); ?>
 <div class="product-info">
     <div class="row">
-    <?php require( ThemeControlHelper::getLayoutPath( 'common/detail/'.$mode.'.tpl' ) );  ?> 
-   
-	<div class="col-xs-12 col-sm-<?php echo $cols[1]; ?> col-md-<?php echo $cols[1]; ?> col-lg-<?php echo $cols[1]; ?>">
-		<h1><?php echo $heading_title; ?></h1>
+    <?php require( ThemeControlHelper::getLayoutPath( 'common/detail/'.$mode.'.tpl' ) );  ?>
+
+        <div class="col-xs-12 col-sm-<?php echo $cols[1]; ?> col-md-<?php echo $cols[1]; ?> col-lg-<?php echo $cols[1]; ?>">
+                <h1><?php echo $heading_title; ?></h1>
 
         <?php if ($review_status) { ?>
             <div class="review">
@@ -30,8 +30,8 @@
 
         <!-- AddThis Button BEGIN -->
         <div class="addthis_toolbox addthis_default_style"><a class="addthis_button_facebook_like" fb:like:layout="button_count"></a> <a class="addthis_button_tweet"></a> <a class="addthis_button_pinterest_pinit"></a> <a class="addthis_counter addthis_pill_style"></a></div>
-        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-515eeaf54693130e"></script> 
-        <!-- AddThis Button END --> 
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-515eeaf54693130e"></script>
+        <!-- AddThis Button END -->
 
         <ul class="list-unstyled description">
             <?php if ($manufacturer) { ?>
@@ -71,7 +71,7 @@
                     <?php } ?>
                 </ul>
             </div>
-        <?php } ?>        
+        <?php } ?>
         <div id="product" class="product-extra ">
             <?php if ($options) { ?>
                 <h3><?php echo $text_option; ?></h3>
@@ -103,7 +103,7 @@
                                             <!--
                                             <?php if ($option_value['price']) { ?>
                                                 (<?php echo $option_value['price_prefix']; ?><?php echo $option_value['price']; ?>)
-                                            <?php } ?> 
+                                            <?php } ?>
                                             -->
                                         </label>
                                     </div>
@@ -212,25 +212,29 @@
                 </div>
             <?php } ?>
             <div class="quantity-adder">
-                <?php echo $olang->get('entry_qty'); ?>        
+                <?php echo $olang->get('entry_qty'); ?>
                 <input type="text" name="quantity" value="<?php echo $minimum; ?>" size="2" id="input-quantity" class="form-control" />
-                <span class="add-up add-action">+</span> 
-                <span class="add-down add-action">-</span>          
+                <span class="add-up add-action">+</span>
+                <span class="add-down add-action">-</span>
             </div>
             <input type="hidden" name="product_id" value="<?php echo $product_id; ?>" />
             <?php if ($minimum > 1) { ?>
                 <div class="alert alert-info"><i class="fa fa-info-circle"></i> <?php echo $text_minimum; ?></div>
-            <?php } ?>       
+            <?php } ?>
             <div class="group-item">
                 <div class="cart">
                     <i class="fa fa-shopping-cart"></i>
                     <button type="button" id="button-cart" data-loading-text="<?php echo $text_loading; ?>" class="btn button"><?php echo $button_cart; ?></button>
-                </div> 
+                </div>
+                <div class="cart">
+                    <i class="fa fa-flash"></i>
+                    <button type="button" id="button-buy" data-loading-text="<?php echo $text_loading; ?>" class="btn button">Buy now!</button>
+                </div>
+            </div>
+            <div class="group-item">
                 <a class="fa fa-heart wishlist" data-toggle="tooltip" title="<?php echo $button_wishlist; ?>" onclick="wishlist.addwishlist('<?php echo $product_id; ?>');"></a>
                 <a class="fa fa-retweet compare" data-toggle="tooltip"  title="<?php echo $button_compare; ?>" onclick="compare.addcompare('<?php echo $product_id; ?>');"></a>
             </div>
-
-
         </div>
 
         <?php if ($tags) { ?>
@@ -244,7 +248,7 @@
             <?php } ?>
           </div>
         <?php } ?>
-	</div>
+        </div>
 </div>
 </div>
 <div class="tabs-group">
@@ -290,7 +294,7 @@
 
                <div class="hide"> <div id="review-form" class="panel review-form-width"><div class="panel-body">
                 <form class="form-horizontal" id="form-review">
-                 
+
                     <h2><?php echo $text_write; ?></h2>
                     <div class="form-group">
                         <div class="col-sm-12">
@@ -361,6 +365,6 @@ $(function(){
     $('#product input[type=radio]').click(function(){
         $('.text-price').text($(this).attr('price'));
     });
-    
+
 });
 </script>
