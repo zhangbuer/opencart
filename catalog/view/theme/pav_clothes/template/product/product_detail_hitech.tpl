@@ -223,12 +223,14 @@
             <?php } ?>
             <div class="group-item">
                 <div class="cart">
-                    <i class="fa fa-shopping-cart"></i>
-                    <button type="button" id="button-cart" data-loading-text="<?php echo $text_loading; ?>" class="btn button"><?php echo $button_cart; ?></button>
+                  <i class="fa fa-shopping-cart"></i>
+                  <button type="button" id="button-cart" data-loading-text="<?php echo $text_loading; ?>" class="btn button"><?php echo $button_cart; ?></button>
                 </div>
-                <a href="/index.php?route=payment/pp_express/express" id="button-buy" data-loading-text="<?php echo $text_loading; ?>" class="btn">
+                <div class="wishlist-compare">
+                <a href="/index.php?route=payment/pp_express/express" id="button-buy" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-block">
                     <img src="/image/sodahair/paypal-checkout.png"/>
                 </a>
+                </div>
             </div>
         </div>
 
