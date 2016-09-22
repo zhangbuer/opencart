@@ -18,11 +18,10 @@
   </div>
   <?php } ?>
   <div class="row"><?php if( $SPAN[0] ): ?>
-                        <aside id="sidebar-left" class="col-md-<?php echo $SPAN[0];?>">
-                                <?php echo $column_left; ?>
-                        </aside>
-                <?php endif; ?>
-
+    <aside id="sidebar-left" class="col-md-<?php echo $SPAN[0];?>">
+      <?php echo $column_left; ?>
+    </aside>
+  <?php endif; ?>
    <section id="sidebar-main" class="col-md-<?php echo $SPAN[1];?>"><div id="content"><?php echo $content_top; ?>
       <h1><?php echo $heading_title; ?>
         <?php if ($weight) { ?>
@@ -93,9 +92,8 @@
         </div>
       </form>
       <?php if ($coupon || $voucher || $reward || $shipping) { ?>
-      <h2><?php echo $text_next; ?></h2>
-      <p><?php echo $text_next_choice; ?></p>
-      <div class="panel-group" id="accordion"><?php echo $coupon; ?><?php echo $voucher; ?><?php echo $reward; ?><?php echo $shipping; ?></div>
+      <h2>PayPal Shipping Address</h2>
+      <p>Your order will be shipped to the address in your PayPal account.</p>
       <?php } ?>
       <br />
       <div class="row">
@@ -111,22 +109,22 @@
         </div>
       </div>
       <div class="buttons">
-        <div class="pull-left"><a href="<?php echo $continue; ?>" class="button btn"><?php echo $button_shopping; ?></a></div>
-        <div class="pull-right"><a href="<?php echo $checkout; ?>" class="button btn"><?php echo $button_checkout; ?></a></div>
-      </div>
-      <div class="buttons">
           <div class="pull-right">
               <a href="/index.php?route=payment/pp_express/express" title="PayPal Express Checkout" id="button-paypal">
                   <img src="https://www.paypalobjects.com/en_GB/i/btn/btn_xpressCheckout.gif" alt="PayPal Express Checkout">
               </a>
           </div>
       </div>
+      <!-- <div class="buttons">
+        <div class="pull-left"><a href="<?php echo $continue; ?>" class="button btn"><?php echo $button_shopping; ?></a></div>
+        <div class="pull-right"><a href="<?php echo $checkout; ?>" class="button btn"><?php echo $button_checkout; ?></a></div>
+      </div> -->
       <?php echo $content_bottom; ?></div>
-   </section>
+   </section> 
 <?php if( $SPAN[2] ): ?>
-        <aside id="sidebar-right" class="col-md-<?php echo $SPAN[2];?>">
-                <?php echo $column_right; ?>
-        </aside>
+  <aside id="sidebar-right" class="col-md-<?php echo $SPAN[2];?>">
+    <?php echo $column_right; ?>
+  </aside>
 <?php endif; ?></div>
 </div>
-<?php echo $footer; ?>
+<?php echo $footer; ?> 

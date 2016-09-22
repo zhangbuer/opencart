@@ -41,7 +41,6 @@ html {
   padding: 0;
 }
 body {
-  background-color: #f4f6f6;
   font-weight: 300;
   margin: 0px;
   padding: 0px;
@@ -122,7 +121,7 @@ a:focus {
 }
 a:hover,
 a:focus {
-  color: #1bbc9b;
+  color: #92278F;
 }
 .quantity input,
 input[name="quantity"] {
@@ -214,10 +213,10 @@ table.radio tr.highlight:hover td {
   padding-bottom: 0;
 }
 .breadcrumb li:last-child:before {
-  color: #1bbc9b;
+  color: #92278F;
 }
 .breadcrumb li:last-child a {
-  color: #1bbc9b;
+  color: #92278F;
 }
 /*  PAGINATION STYLE */
 .pagination-link {
@@ -278,7 +277,7 @@ input.button {
 input.button {
   cursor: pointer;
   color: #FFFFFF;
-  background-color: #1bbc9b;
+  background-color: #92278F;
   box-shadow: none;
   padding: 6px 12px;
   border: none;
@@ -335,7 +334,7 @@ textarea {
   text-transform: uppercase;
 }
 .htabs li.active a {
-  background: #1bbc9b;
+  background: #92278F;
   color: #ffffff;
 }
 .tab-content {
@@ -393,7 +392,7 @@ ul.tree > li > a {
 }
 ul.tree > li > a:hover,
 ul.tree > li > a.active {
-  border-left: 4px solid #1bbc9b;
+  border-left: 4px solid #92278F;
 }
 ul.tree > li > a > i {
   padding-right: 13px;
@@ -407,10 +406,10 @@ ul.tree > li a {
 }
 ul.tree > li a:hover .badge,
 ul.tree > li a.active .badge {
-  background-color: #1bbc9b;
+  background-color: #92278F;
 }
 ul.tree > li a.active {
-  color: #1bbc9b;
+  color: #92278F;
 }
 ul.tree > li a.active ul {
   display: block;
@@ -439,7 +438,7 @@ ul.list > li > a {
   font-size: 14px !important;
 }
 ul.list > li a.active {
-  color: #1bbc9b;
+  color: #92278F;
 }
 ul.list > li a.active ul {
   display: block;
@@ -543,7 +542,7 @@ ul.list > li:hover a {
   font-weight: 300;
 }
 .welcome h2 {
-  color: #1bbc9b;
+  color: #92278F;
   font-size: 20px;
   padding: 10px 0;
   font-weight: 300;
@@ -704,7 +703,7 @@ body.layout-boxed-lg #page {
  * HEADER 
  */
 #header-main {
-  background-color: #ffffff;
+  border-bottom: 1px solid #eee;
   min-height: 67px;
 }
 #logo {
@@ -732,7 +731,7 @@ body.layout-boxed-lg #page {
   margin-right: 0;
 }
 #topbar ul li a:hover {
-  color: #1bbc9b;
+  color: #92278F;
 }
 #topbar .show-mobile:before,
 #topbar .show-mobile:after {
@@ -762,7 +761,7 @@ body.layout-boxed-lg #page {
 #topbar .show-mobile .quickaccess-toggle {
   width: 35px;
   height: 35px;
-  background-color: #1bbc9b;
+  background-color: #92278F;
   color: #ffffff;
   line-height: 35px;
   text-align: center;
@@ -819,7 +818,7 @@ body.layout-boxed-lg #page {
 }
 #topbar .show-mobile ul a:hover,
 #topbar .show-mobile .links a:hover {
-  color: #1bbc9b;
+  color: #92278F;
 }
 #topbar .show-mobile ul a img,
 #topbar .show-mobile .links a img {
@@ -851,7 +850,7 @@ body.layout-boxed-lg #page {
 }
 #topbar .login-content {
   background: none repeat scroll 0 0 #FFFFFF;
-  border: 1px solid #1bbc9b;
+  border: 1px solid #92278F;
   left: 0;
   overflow: hidden;
   padding: 8px 10px;
@@ -890,7 +889,7 @@ body.layout-boxed-lg #page {
  * SLIDESHOW 
  */
 .pavtestimonial .infor-profile span {
-  color: #1bbc9b;
+  color: #92278F;
 }
 .pavtestimonial .info-testimonail:before {
   background: url('../image/default/text-qoute.png') no-repeat scroll 0 0 rgba(0, 0, 0, 0);
@@ -956,7 +955,7 @@ body.layout-boxed-lg #page {
   overflow: hidden;
 }
 .promotion .product-block .name a {
-  color: #1bbc9b;
+  color: #92278F;
 }
 .promotion .product-block .description {
   color: #b1b8c1;
@@ -1004,7 +1003,7 @@ body.layout-boxed-lg #page {
   -ms-transform: translateX(0px);
 }
 .promotion .product-block:hover .group-item .cart {
-  background: #1bbc9b;
+  background: #92278F;
 }
 .promotion .product-block:hover .group-item .cart:hover {
   background: #3F4C58;
@@ -1036,8 +1035,8 @@ body.layout-boxed-lg #page {
   color: #c0c0c4;
 }
 .pavtestimonial .carousel-control:hover {
-  border: 1px solid #1BBC9B;
-  color: #1bbc9b;
+  border: 1px solid #92278F;
+  color: #92278F;
 }
 .pavtestimonial .carousel-control.left {
   left: auto;
@@ -1085,7 +1084,7 @@ body.layout-boxed-lg #page {
 }
 #footer .footer-center .pav-static:hover .pv-icon {
   box-shadow: 0 0 0 4px #414d59;
-  background-color: #1bbc9b;
+  background-color: #92278F;
 }
 #footer .footer-center .pav-static:hover .pv-icon:after {
   opacity: 0.5;
@@ -1096,7 +1095,7 @@ body.layout-boxed-lg #page {
   -ms-transform: scale(0.85);
 }
 #footer .footer-center .pav-static:hover h3 {
-  color: #1bbc9b;
+  color: #92278F;
 }
 #footer .footer-center .pav-static .pv-icon {
   color: #FFFFFF;
@@ -1159,7 +1158,7 @@ body.layout-boxed-lg #page {
   color: #ffffff;
 }
 #footer .footer-bottom ul.pav-contact-us .icon:hover {
-  background: #1bbc9b;
+  background: #92278F;
   -webkit-transition: 0.3s ease-in-out 0s;
   transition: 0.3s ease-in-out 0s;
 }
@@ -1182,6 +1181,7 @@ body.layout-boxed-lg #page {
   color: #ffffff;
   -webkit-transition: 0.3s ease-in-out 0s;
   transition: 0.3s ease-in-out 0s;
+  text-decoration: none;
 }
 #footer .footer-bottom p {
   margin-top: 10px;
@@ -1235,8 +1235,8 @@ body.layout-boxed-lg #page {
   margin-bottom: 3px;
 }
 #footer .column a:hover {
-  text-decoration: underline;
-  color: #1bbc9b;
+  text-decoration: none;
+  color: #92278F;
 }
 /* POWER BY */
 #powered {
@@ -1247,7 +1247,7 @@ body.layout-boxed-lg #page {
   line-height: 25px;
 }
 #powered a {
-  color: #1bbc9b;
+  color: #92278F;
 }
 #powered a:hover {
   color: #ffffff;
@@ -1276,7 +1276,7 @@ body.layout-boxed-lg #page {
   background: #eaeced;
 }
 .box.highlighted .box-heading span {
-  background: #1bbc9b;
+  background: #92278F;
   padding: 9px 30px 9px 10px;
   position: relative;
 }
@@ -1295,7 +1295,7 @@ body.layout-boxed-lg #page {
   font-size: 16px;
   text-transform: uppercase;
   position: relative;
-  background: #1bbc9b;
+  background: #92278F;
   color: #ffffff;
   font-weight: 400;
 }
@@ -1348,10 +1348,10 @@ body.layout-boxed-lg #page {
   padding-left: 0;
 }
 .box.dark ul li a:hover {
-  color: #1bbc9b;
+  color: #92278F;
 }
 .box.green {
-  background: #1bbc9b;
+  background: #92278F;
 }
 .box.green a {
   color: #63E063;
@@ -1393,7 +1393,7 @@ body.layout-boxed-lg #page {
   color: #ffffff;
 }
 .box.pink a:hover {
-  color: #1bbc9b;
+  color: #92278F;
 }
 .box.red {
   background: #9d261d;
@@ -1424,7 +1424,7 @@ body.layout-boxed-lg #page {
   font-size: 16px;
   text-transform: uppercase;
   position: relative;
-  background: #1bbc9b;
+  background: #92278F;
   color: #ffffff;
   font-weight: 400;
 }
@@ -1465,7 +1465,7 @@ body.layout-boxed-lg #page {
   color: #b1b8c1;
 }
 .language button span:hover {
-  color: #1bbc9b;
+  color: #92278F;
 }
 .language img {
   cursor: pointer;
@@ -1475,7 +1475,7 @@ body.layout-boxed-lg #page {
   padding: 0 31px;
 }
 .language .language-item .list-item:hover {
-  color: #1bbc9b;
+  color: #92278F;
   cursor: pointer;
 }
 /* currency */
@@ -1502,14 +1502,14 @@ body.layout-boxed-lg #page {
   color: #b1b8c1;
 }
 .currency button span:hover {
-  color: #1bbc9b;
+  color: #92278F;
 }
 .currency ul.dropdown-menu button {
   background: none;
   border: none;
 }
 .currency ul.dropdown-menu button:hover span {
-  color: #1bbc9b;
+  color: #92278F;
 }
 .currency .dropdown-menu,
 .language .dropdown-menu {
@@ -1599,7 +1599,7 @@ body.layout-boxed-lg #page {
   border-top: 0;
   border-right: 0;
   border-left: 0;
-  border-bottom: 6px solid #1bbc9b;
+  border-bottom: 6px solid #92278F;
   -webkit-box-shadow: 0px 2px 2px #eaeced;
   box-shadow: 0px 2px 2px #eaeced;
   right: 0;
@@ -1614,7 +1614,7 @@ body.layout-boxed-lg #page {
   top: -8px;
 }
 #cart .heading {
-  background-color: #1bbc9b;
+  background-color: #92278F;
   border-radius: 4px;
   line-height: 34px;
 }
@@ -1637,7 +1637,7 @@ body.layout-boxed-lg #page {
   font-weight: bold;
   margin-top: 0px;
   margin-bottom: 3px;
-  color: #1bbc9b;
+  color: #92278F;
   text-transform: none;
   line-height: 20px;
 }
@@ -1757,7 +1757,7 @@ body.layout-boxed-lg #page {
   margin-top: 20px;
 }
 .product-block a:hover {
-  color: #1bbc9b;
+  color: #92278F;
 }
 .product-block .price-old {
   color: #6e6e72;
@@ -1777,9 +1777,12 @@ body.layout-boxed-lg #page {
   text-decoration: none;
   display: block;
   margin-bottom: 4px;
+  line-height: 20px;
+  height: 40px;
+  overflow: hidden;
 }
 .product-block .name a:hover {
-  color: #1bbc9b;
+  color: #92278F;
 }
 .product-block .image {
   overflow: hidden;
@@ -1851,12 +1854,12 @@ body.layout-boxed-lg #page {
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
   width: 100%;
-  color: #1bbc9b;
+  color: #92278F;
   font-weight: bold;
   z-index: 10;
 }
 .product-block .image span.zoom_text {
-  color: #1bbc9b;
+  color: #92278F;
   left: 0;
   margin-top: 5px;
   position: absolute;
@@ -1888,7 +1891,7 @@ body.layout-boxed-lg #page {
   opacity: 0;
   filter: alpha(opacity=0);
   background-color: #ffffff;
-  color: #1bbc9b;
+  color: #92278F;
   font-size: 0;
   -webkit-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
@@ -1972,7 +1975,7 @@ body.layout-boxed-lg #page {
   font-size: 13px;
 }
 .product-block .group-item .cart:hover {
-  background-color: #1bbc9b;
+  background-color: #92278F;
 }
 .product-block .group-item .wishlist-compare {
   float: left;
@@ -1993,7 +1996,7 @@ body.layout-boxed-lg #page {
 }
 .product-block .group-item .wishlist-compare a:hover {
   color: #ffffff;
-  background-color: #1bbc9b;
+  background-color: #92278F;
   -webkit-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
 }
@@ -2114,8 +2117,8 @@ ul.box-filter span {
   right: -10px;
 }
 .pavcarousel .carousel-control:hover {
-  color: #1bbc9b;
-  border: 1px solid #1bbc9b;
+  color: #92278F;
+  border: 1px solid #92278F;
 }
 /* 
  * pavpopulartags
@@ -2297,7 +2300,7 @@ ul.box-filter span {
   line-height: 35px;
 }
 .product-filter .product-compare a {
-  background-color: #1bbc9b;
+  background-color: #92278F;
   padding: 8px;
   color: #ffffff;
   -webkit-transition: all 0.4s ease 0s;
@@ -2438,7 +2441,7 @@ ul.box-filter span {
   margin-bottom: 20px;
 }
 .product-info .group-item div.cart {
-  background: #1bbc9b;
+  background: #92278F;
   color: #ffffff;
   border: none;
   -webkit-transition: all 0.4s ease 0s;
@@ -2606,7 +2609,7 @@ ul.box-filter span {
   overflow: hidden;
   top: 0;
   width: 35px;
-  background: #1bbc9b;
+  background: #92278F;
   opacity: 1;
   text-shadow: none;
   border-right: 1px solid #2fc6a6;
@@ -3135,19 +3138,19 @@ ul.box-filter span {
   border-top-color: #6A6A6A;
 }
 #pav-mainnav .navbar-inverse .navbar-nav li a:hover {
-  color: #1bbc9b;
+  color: #92278F;
 }
 #pav-mainnav .navbar-inverse .navbar-nav li:hover {
-  border-top: 3px solid #1bbc9b;
+  border-top: 3px solid #92278F;
   -webkit-transition: all 0.4s ease-out 0s;
   transition: all 0.4s ease-out 0s;
 }
 #pav-mainnav .navbar-inverse .navbar-nav li:hover span {
-  color: #1bbc9b;
+  color: #92278F;
 }
 #pav-mainnav .navbar-inverse .navbar-nav li:hover .caret {
-  border-bottom-color: #1bbc9b;
-  border-top-color: #1bbc9b;
+  border-bottom-color: #92278F;
+  border-top-color: #92278F;
 }
 #pav-mainnav .navbar-inverse .navbar-nav li .dropdown-menu {
   border: none;
@@ -3163,7 +3166,7 @@ ul.box-filter span {
 #pav-mainnav .navbar-inverse .navbar-nav li .dropdown-menu li:hover {
   padding-left: 10px;
   background-color: transparent;
-  color: #1bbc9b;
+  color: #92278F;
   border-top: 3px solid transparent;
 }
 #pav-mainnav .navbar-inverse .navbar-nav li .dropdown-menu li a {
@@ -3173,13 +3176,13 @@ ul.box-filter span {
   text-transform: none;
 }
 #pav-mainnav .navbar-inverse .navbar-nav li .dropdown-menu li a:hover {
-  color: #1bbc9b;
+  color: #92278F;
 }
 #pav-mainnav .navbar-inverse .navbar-nav li .dropdown-menu li a span {
   color: #6a6a6a;
 }
 #pav-mainnav .navbar-inverse .navbar-nav li .dropdown-menu li a span:hover {
-  color: #1bbc9b;
+  color: #92278F;
 }
 #pav-mainnav ul.nav > li.aligned-fullwidth {
   position: static;
@@ -3363,7 +3366,7 @@ ul.box-filter span {
   float: left;
 }
 #menu-offcanvas .menu-offcanvas-inner {
-  background-color: #1bbc9b;
+  background-color: #92278F;
 }
 #menu-offcanvas .dropdown .dropdown-menu {
   border: medium none;
@@ -3524,10 +3527,10 @@ body,
   transition: all 0.4s ease 0s;
 }
 .newsletter-submit .button:hover {
-  background-color: #1bbc9b;
+  background-color: #92278F;
 }
 .btn-submit {
-  background-color: #1bbc9b;
+  background-color: #92278F;
   color: #fff;
 }
 .btn-submit:hover {
@@ -3654,8 +3657,8 @@ body,
     height: 60px!important;
   }
   .navbar-inverse .navbar-toggle {
-    background-color: #1BBC9B;
-    border-color: #1BBC9B;
+    background-color: #92278F;
+    border-color: #92278F;
     display: block;
   }
   .navbar-inverse .navbar-toggle:hover {

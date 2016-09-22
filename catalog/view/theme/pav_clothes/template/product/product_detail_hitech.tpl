@@ -226,14 +226,6 @@
                     <i class="fa fa-shopping-cart"></i>
                     <button type="button" id="button-cart" data-loading-text="<?php echo $text_loading; ?>" class="btn button"><?php echo $button_cart; ?></button>
                 </div>
-                <a class="fa fa-heart wishlist" data-toggle="tooltip" title="<?php echo $button_wishlist; ?>" onclick="wishlist.addwishlist('<?php echo $product_id; ?>');"></a>
-                <a class="fa fa-retweet compare" data-toggle="tooltip"  title="<?php echo $button_compare; ?>" onclick="compare.addcompare('<?php echo $product_id; ?>');"></a>
-                <div class="cart">
-                    <!-- <i class="fa fa-flash"></i>
-                    <button type="button" id="button-buy" data-loading-text="<?php echo $text_loading; ?>" class="btn button">Buy now!</button>-->
-                </div>
-            </div>
-            <div class="group-item">
                 <a href="/index.php?route=payment/pp_express/express" id="button-buy" data-loading-text="<?php echo $text_loading; ?>" class="btn">
                     <img src="/image/sodahair/paypal-checkout.png"/>
                 </a>

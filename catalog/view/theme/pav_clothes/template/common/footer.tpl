@@ -116,6 +116,7 @@
         <?php
           echo $helper->renderModule('pavnewsletter');
         ?>
+        <p style="font-weight: bold; font-size: 50px;"> <a href=" https://www.instagram.com/sodahairweave/" class="fb fa fa-facebook-square"></a>                                                                          <a href="https://www.instagram.com/sodahairweave/" class="twit  fa fa-linkedin-square"></a>                                                                         <a href="https://www.instagram.com/sodahairweave/" class="gogl fa fa-pinterest-square"></a><span id="transmark" style="display: none; width: 0px; height: 0px;"></span></p>
       </div>
     </div>
     </div>
@@ -133,7 +134,6 @@
         <?php } else { ?>
           <?php echo $powered; ?>. 
         <?php } ?>
-        Design By <a href="http://www.pavothemes.com" title="pavothemes - opencart themes clubs">LexusThemes</a>
       </div>
       
       <?php if( $content=$helper->getLangConfig('widget_paypal') ) {?>
