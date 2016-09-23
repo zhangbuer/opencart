@@ -116,7 +116,6 @@
         <?php
           echo $helper->renderModule('pavnewsletter');
         ?>
-        <p style="font-weight: bold; font-size: 50px;"> <a href=" https://www.instagram.com/sodahairweave/" class="fb fa fa-facebook-square"></a>                                                                          <a href="https://www.instagram.com/sodahairweave/" class="twit  fa fa-linkedin-square"></a>                                                                         <a href="https://www.instagram.com/sodahairweave/" class="gogl fa fa-pinterest-square"></a><span id="transmark" style="display: none; width: 0px; height: 0px;"></span></p>
       </div>
     </div>
     </div>
@@ -141,8 +140,6 @@
           <?php echo $content; ?>
         </div>
       <?php } ?>
-
-
     </div>   
   </div>
 </div>

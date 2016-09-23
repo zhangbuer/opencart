@@ -92,8 +92,9 @@
         </div>
       </form>
       <?php if ($coupon || $voucher || $reward || $shipping) { ?>
-      <h2>PayPal Shipping Address</h2>
-      <p>Your order will be shipped to the address in your PayPal account.</p>
+      <h2><?php echo $text_next; ?></h2>
+      <p><?php echo $text_next_choice; ?></p>
+      <div class="panel-group" id="accordion"><?php echo $coupon; ?><?php echo $voucher; ?><?php echo $reward; ?><?php echo $shipping; ?></div>
       <?php } ?>
       <br />
       <div class="row">
@@ -115,10 +116,10 @@
               </a>
           </div>
       </div>
-      <!-- <div class="buttons">
+   <div class="buttons">
         <div class="pull-left"><a href="<?php echo $continue; ?>" class="button btn"><?php echo $button_shopping; ?></a></div>
         <div class="pull-right"><a href="<?php echo $checkout; ?>" class="button btn"><?php echo $button_checkout; ?></a></div>
-      </div> -->
+      </div>
       <?php echo $content_bottom; ?></div>
    </section> 
 <?php if( $SPAN[2] ): ?>
