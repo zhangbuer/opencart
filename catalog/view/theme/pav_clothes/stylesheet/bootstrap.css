@@ -1284,7 +1284,7 @@ th {
   padding: 8px;
   line-height: 1.42857143;
   vertical-align: top;
-  border-top: 1px solid #dddddd;
+/*  border-top: 1px solid #dddddd;*/
 }
 .table thead > tr > th {
   vertical-align: bottom;
@@ -1313,10 +1313,17 @@ th {
   padding: 5px;
 }
 .table-responsive {
+	border-bottom: solid 1px #e5e5e5;
     margin: 20px 0;
 }
-.table-bordered {
+/*.table-bordered {
   border: 1px solid #dddddd;
+}*/
+.table-tr {
+    border-bottom: 1px solid #e5e5e5;
+    color: #000;
+    font-size: 15px;
+    text-transform: uppercase;
 }
 .table-bordered > thead > tr > th,
 .table-bordered > tbody > tr > th,
@@ -1324,7 +1331,7 @@ th {
 .table-bordered > thead > tr > td,
 .table-bordered > tbody > tr > td,
 .table-bordered > tfoot > tr > td {
-  border: 1px solid #dddddd;
+/*  border: 1px solid #dddddd;*/
 }
 /*.table-bordered > thead > tr > th,
 .table-bordered > thead > tr > td {
@@ -1793,7 +1800,6 @@ textarea.input-lg {
   font-size: 14px;
   font-weight: normal;
   line-height: 1.42857143;
-  text-align: center;
   vertical-align: middle;
   cursor: pointer;
   border: 1px solid transparent;
@@ -4568,6 +4574,7 @@ a.list-group-item:focus {
 }
 .panel-body {
   padding: 15px;
+  border: 1px solid #e5e5e5;
 }
 .panel-body:before,
 .panel-body:after {

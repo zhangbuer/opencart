@@ -23,16 +23,24 @@
     </aside>
   <?php endif; ?>
    <section id="sidebar-main" class="col-md-<?php echo $SPAN[1];?>"><div id="content"><?php echo $content_top; ?>
-      <h1><?php echo $heading_title; ?>
+     
+            <div class="buttons">
+             <h1 style="float:left;"><?php echo $heading_title; ?>
         <?php if ($weight) { ?>
         &nbsp;(<?php echo $weight; ?>)
         <?php } ?>
       </h1>
+        <div class="pull-right">
+              <a href="/index.php?route=payment/pp_express/express" title="PayPal Express Checkout" id="button-paypal">
+                  <img src="https://www.paypalobjects.com/en_GB/i/btn/btn_xpressCheckout.gif" alt="PayPal Express Checkout">
+              </a>
+          </div>
+      </div>
       <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
         <div class="table-responsive">
           <table class="table table-bordered">
             <thead>
-              <tr>
+              <tr class="table-tr" style=" font-size: 14px;">
                 <td class="text-center"><?php echo $column_image; ?></td>
                 <td class="text-left"><?php echo $column_name; ?></td>
                 <td class="text-left"><?php echo $column_model; ?></td>
@@ -109,17 +117,17 @@
           </table>
         </div>
       </div>
-      <div class="buttons">
-          <div class="pull-right">
+      <div class="buttons" style="border-top:solid 1px #e5e5e5;">
+         <img src="http://sodahair.com/image/catalog/demo/slider/ssl-badge.png"> <div class="pull-right">
               <a href="/index.php?route=payment/pp_express/express" title="PayPal Express Checkout" id="button-paypal">
                   <img src="https://www.paypalobjects.com/en_GB/i/btn/btn_xpressCheckout.gif" alt="PayPal Express Checkout">
               </a>
           </div>
       </div>
-   <div class="buttons">
+   <!--<div class="buttons">
         <div class="pull-left"><a href="<?php echo $continue; ?>" class="button btn"><?php echo $button_shopping; ?></a></div>
         <div class="pull-right"><a href="<?php echo $checkout; ?>" class="button btn"><?php echo $button_checkout; ?></a></div>
-      </div>
+      </div>-->
       <?php echo $content_bottom; ?></div>
    </section> 
 <?php if( $SPAN[2] ): ?>
