@@ -1,4 +1,6 @@
 <?php
+// add composer autoload
+include 'vendor/autoload.php';
 // Version
 define('VERSION', '2.0.3.1');
 
