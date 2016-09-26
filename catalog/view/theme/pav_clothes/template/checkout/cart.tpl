@@ -24,16 +24,14 @@
   <?php endif; ?>
    <section id="sidebar-main" class="col-md-<?php echo $SPAN[1];?>"><div id="content"><?php echo $content_top; ?>
      
-            <div class="buttons">
+            <div class="buttons" style="border:none;">
              <h1 style="float:left;"><?php echo $heading_title; ?>
         <?php if ($weight) { ?>
         &nbsp;(<?php echo $weight; ?>)
         <?php } ?>
       </h1>
         <div class="pull-right">
-              <a href="/index.php?route=payment/pp_express/express" title="PayPal Express Checkout" id="button-paypal">
-                  <img src="https://www.paypalobjects.com/en_GB/i/btn/btn_xpressCheckout.gif" alt="PayPal Express Checkout">
-              </a>
+             <!-- PayPal Logo --><table border="0" cellpadding="10" cellspacing="0" align="center"><tr><td align="center"><a href="https://www.paypal.com/c2/webapps/mpp/paypal-popup?locale.x=zh_C2" title="How PayPal Works" onclick="javascript:window.open('https://www.paypal.com/c2/webapps/mpp/paypal-popup?locale.x=zh_C2','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;"><img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/checkout-logo-large.png" alt="Check out with PayPal" /></a></td></tr></table><!-- PayPal Logo -->
           </div>
       </div>
       <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
@@ -104,7 +102,8 @@
       <p><?php echo $text_next_choice; ?></p>
       <div class="panel-group" id="accordion"><?php echo $coupon; ?><?php echo $voucher; ?><?php echo $reward; ?><?php echo $shipping; ?></div>
       <?php } ?>
-      <br />
+      <h2>PayPal Shipping Address</h2>
+      <p>Your order will be shipped to <strong>the address in your PayPal account.</strong></p>
       <div class="row">
         <div class="col-sm-4 col-sm-offset-8">
           <table class="table table-bordered">
@@ -119,9 +118,7 @@
       </div>
       <div class="buttons" style="border-top:solid 1px #e5e5e5;">
          <img src="http://sodahair.com/image/catalog/demo/slider/ssl-badge.png"> <div class="pull-right">
-              <a href="/index.php?route=payment/pp_express/express" title="PayPal Express Checkout" id="button-paypal">
-                  <img src="https://www.paypalobjects.com/en_GB/i/btn/btn_xpressCheckout.gif" alt="PayPal Express Checkout">
-              </a>
+               <!-- PayPal Logo --><table border="0" cellpadding="10" cellspacing="0" align="center"><tr><td align="center"><a href="https://www.paypal.com/c2/webapps/mpp/paypal-popup?locale.x=zh_C2" title="How PayPal Works" onclick="javascript:window.open('https://www.paypal.com/c2/webapps/mpp/paypal-popup?locale.x=zh_C2','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;"><img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/checkout-logo-large.png" alt="Check out with PayPal" /></a></td></tr></table><!-- PayPal Logo -->
           </div>
       </div>
    <!--<div class="buttons">

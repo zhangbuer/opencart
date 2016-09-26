@@ -65,9 +65,9 @@
       <div class="row">
 
         <?php if( $content=$helper->getLangConfig('widget_contact_us') ) {?>
-        <div class="column col-xs-12 col-sm-6 col-lg-3 col-md-3">
+        <div class="column col-xs-12 col-sm-6 col-lg-2 col-md-2">
           <div class="box contact-us">
-            <div class="box-heading"><span><?php echo $objlang->get('text_contact_us'); ?></span></div>
+            <div class="box-heading"><span><!--<?php echo $objlang->get('text_contact_us'); ?>-->Product Help</span></div>
             <?php echo $content; ?>
           </div>
         </div>
@@ -81,8 +81,9 @@
               <li><a href="<?php echo $contact; ?>"><?php echo $text_contact; ?></a></li>
               <li><a href="<?php echo $return; ?>"><?php echo $text_return; ?></a></li>
               <li><a href="<?php echo $sitemap; ?>"><?php echo $text_sitemap; ?></a></li>
+               <li><a href="<?php echo $voucher; ?>"><?php echo $text_voucher; ?></a></li>
                <li><a href="<?php echo $manufacturer; ?>"><?php echo $text_manufacturer; ?></a></li>
-              <li><a href="<?php echo $voucher; ?>"><?php echo $text_voucher; ?></a></li>
+             
             </ul>
           </div>
         </div>
@@ -100,7 +101,7 @@
           </div>
           <?php } ?>
           
-        <div class="column col-xs-12 col-sm-6 col-lg-2 col-md-2">
+        <div class="column col-xs-12 col-sm-6 col-lg-3 col-md-3">
           <div class="box">
             <div class="box-heading"><span><?php echo $text_account; ?></span></div>
             <ul class="list">
@@ -116,8 +117,10 @@
         <?php
           echo $helper->renderModule('pavnewsletter');
         ?>
+        <div style="font-weight: bold; font-size: 50px;"> <a href=" https://www.instagram.com/sodahairweave/" class="fb fa fa-facebook-square"></a>                                                                          <a href="https://www.instagram.com/sodahairweave/" class="twit  fa fa-linkedin-square"></a>                                                                         <a href="https://www.instagram.com/sodahairweave/" class="gogl fa fa-pinterest-square"></a>
+        <a href="#" class="fa fa-twitter-square"></a>
+<a href="#" class="fa fa-google-plus-square"></a></div>
       </div>
-       <div style="font-weight: bold; font-size: 50px;"> <a href=" https://www.instagram.com/sodahairweave/" class="fb fa fa-facebook-square"></a>                                                                          <a href="https://www.instagram.com/sodahairweave/" class="twit  fa fa-linkedin-square"></a>                                                                         <a href="https://www.instagram.com/sodahairweave/" class="gogl fa fa-pinterest-square"></a></div>
     </div>
     </div>
      </div> </div> 

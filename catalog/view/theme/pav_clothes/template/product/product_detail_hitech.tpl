@@ -210,6 +210,7 @@
                     </select>
                     <div class="help-block" id="recurring-description"></div>
                 </div>
+                <div style="clear:both;"></div>
             <?php } ?>
             <div class="quantity-adder">
                 <?php echo $olang->get('entry_qty'); ?>
@@ -228,7 +229,7 @@
                 </div>
                 <div class="wishlist-compare">
                 <a href="/index.php?route=payment/pp_express/express" id="button-buy" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-block">
-                    <img src="/image/sodahair/paypal-checkout.png"/>
+                    <img style="height:37px;" src="/image/sodahair/paypal-checkout.png"/>
                 </a>
                 </div>
             </div>

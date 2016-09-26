@@ -13,7 +13,7 @@ echo $header; ?>
    <section id="sidebar-main" class="col-md-<?php echo $SPAN[1];?>">
      <?php require( PAVO_THEME_DIR."/template/common/breadcrumb.tpl" );  ?>
     <div id="content"><?php echo $content_top; ?>
-      <h1><?php echo $heading_title; ?></h1>
+     <!-- <h1><?php echo $heading_title; ?></h1>-->
       <?php if ($thumb || $description) { ?>
       <div class="category-info clearfix hidden-xs hidden-sm">
         <?php if ($thumb) { ?>
@@ -28,7 +28,7 @@ echo $header; ?>
       <?php } ?>
 
       <?php if( true &&  $categories = $helper->getCategoriesById() ){   ?>
-      <h4><?php echo $text_refine; ?></h4> 
+      <!--<h4><?php echo $text_refine; ?></h4> -->
 	   <div class="category-list clearfix">
 			  <div class="panel-body">  
  

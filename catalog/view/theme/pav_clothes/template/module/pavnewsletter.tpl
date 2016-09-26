@@ -1,6 +1,6 @@
 <div class="<?php echo $prefix; ?> box newsletter-submit" id="newsletter_<?php echo $position.$module;?>">
 	<span class="box-heading"><?php echo $objlang->get("entry_newsletter");?></span>
-	<div class="description"><?php echo html_entity_decode( $description );?></div>
+	<div class="description"><!--<?php echo html_entity_decode( $description );?>-->Fill in your email to subscribe to us</div>
 	<div class="block_content">		
 			<form id="formNewLestter" method="post" action="<?php echo $action; ?>">
 				<p>
