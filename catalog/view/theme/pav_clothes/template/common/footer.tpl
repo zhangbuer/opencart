@@ -117,7 +117,7 @@
         <?php
           echo $helper->renderModule('pavnewsletter');
         ?>
-        <div style="font-weight: bold; font-size: 50px;"> <a href=" https://www.instagram.com/sodahairweave/" class="fb fa fa-facebook-square"></a>                                                                          <a href="https://www.instagram.com/sodahairweave/" class="twit  fa fa-linkedin-square"></a>                                                                         <a href="https://www.instagram.com/sodahairweave/" class="gogl fa fa-pinterest-square"></a>
+        <div style="font-weight: bold; font-size: 40px;"> <a href=" https://www.instagram.com/sodahairweave/" class="fb fa fa-facebook-square"></a>                                                                          <a href="https://www.instagram.com/sodahairweave/" class="twit  fa fa-linkedin-square"></a>                                                                         <a href="https://www.instagram.com/sodahairweave/" class="gogl fa fa-pinterest-square"></a>
         <a href="#" class="fa fa-twitter-square"></a>
 <a href="#" class="fa fa-google-plus-square"></a></div>
       </div>

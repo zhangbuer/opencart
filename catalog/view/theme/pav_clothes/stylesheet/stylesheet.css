@@ -1078,7 +1078,7 @@ body.layout-boxed-lg #page {
   border: none;
 }
 #footer .footer-center {
-  background: #666;
+  background: #000;
   border-bottom: 1px solid #222;
   color: #ffffff;
 }
@@ -1799,6 +1799,18 @@ body.layout-boxed-lg #page {
 .product-block .name a:hover {
   color: #92278F;
 }
+.sale_badge {
+    background: #ff9c01 none repeat scroll 0 0;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: bold;
+    height: 50px;
+    line-height: 50px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 50px;
+}
 .product-block .image {
   overflow: hidden;
   position: relative;
@@ -1931,6 +1943,7 @@ body.layout-boxed-lg #page {
   pointer-events: none;
   position: absolute;
   width: 100%;
+  box-shadow: 0 0 5px #666;
 }
 .product-block .image:hover img {
   right: 0;
@@ -2462,6 +2475,10 @@ ul.box-filter span {
   -webkit-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
   margin: 7px 7px 7px 0;
+  float: left;
+}
+.wishlist-compare {
+    float: left;
 }
 .product-info .group-item button {
   text-transform: uppercase;
