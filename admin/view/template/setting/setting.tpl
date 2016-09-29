@@ -1186,6 +1186,22 @@
                   <?php } ?>
                 </div>
               </div>
+              <div class="form-group">
+                <label class="col-sm-2 control-label" for="input-image-location">Amazon S3</label>
+                <div class="col-sm-10">
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <input type="text" name="config_s3_region" value="<?php echo $config_s3_region; ?>" placeholder="s3 region" class="form-control" />
+                    </div>
+                    <div class="col-sm-4">
+                      <input type="text" name="config_s3_key" value="<?php echo $config_s3_key; ?>" placeholder="s3 key" class="form-control" />
+                    </div>
+                    <div class="col-sm-4">
+                      <input type="text" name="config_s3_secret" value="<?php echo $config_s3_secret; ?>" placeholder="s3 secret" class="form-control" />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="tab-pane" id="tab-ftp">
               <div class="form-group">

@@ -1077,6 +1077,24 @@ class ControllerSettingSetting extends Controller {
 			$data['config_image_location_height'] = $this->config->get('config_image_location_height');
 		}
 
+		if (isset($this->request->post['config_s3_region'])) {
+		    $data['config_s3_region'] = $this->request->post['config_s3_region'];
+		} else {
+		    $data['config_s3_region'] = $this->config->get('config_s3_region');
+		}
+
+		if (isset($this->request->post['config_s3_key'])) {
+		    $data['config_s3_key'] = $this->request->post['config_s3_key'];
+		} else {
+		    $data['config_s3_key'] = $this->config->get('config_s3_key');
+		}
+
+		if (isset($this->request->post['config_s3_secret'])) {
+		    $data['config_s3_secret'] = $this->request->post['config_s3_secret'];
+		} else {
+		    $data['config_s3_secret'] = $this->config->get('config_s3_secret');
+		}
+
 		if (isset($this->request->post['config_ftp_hostname'])) {
 			$data['config_ftp_hostname'] = $this->request->post['config_ftp_hostname'];
 		} elseif ($this->config->get('config_ftp_hostname')) {
@@ -1128,40 +1146,40 @@ class ControllerSettingSetting extends Controller {
 		} else {
 			$data['config_mail_parameter'] = $this->config->get('config_mail_parameter');
 		}
-		
+
 		if (isset($this->request->post['config_mail_smtp_hostname'])) {
 			$data['config_mail_smtp_hostname'] = $this->request->post['config_mail_smtp_hostname'];
 		} else {
 			$data['config_mail_smtp_hostname'] = $this->config->get('config_mail_smtp_hostname');
 		}
-		
+
 		if (isset($this->request->post['config_mail_smtp_username'])) {
 			$data['config_mail_smtp_username'] = $this->request->post['config_mail_smtp_username'];
 		} else {
 			$data['config_mail_smtp_username'] = $this->config->get('config_mail_smtp_username');
-		}	
-					
+		}
+
 		if (isset($this->request->post['config_mail_smtp_password'])) {
 			$data['config_mail_smtp_password'] = $this->request->post['config_mail_smtp_password'];
 		} else {
 			$data['config_mail_smtp_password'] = $this->config->get('config_mail_smtp_password');
-		}	
-		
+		}
+
 		if (isset($this->request->post['config_mail_smtp_port'])) {
 			$data['config_mail_smtp_port'] = $this->request->post['config_mail_smtp_port'];
 		} elseif ($this->config->has('config_mail_smtp_port')) {
 			$data['config_mail_smtp_port'] = $this->config->get('config_mail_smtp_port');
 		} else {
 			$data['config_mail_smtp_port'] = 25;
-		}	
-		
+		}
+
 		if (isset($this->request->post['config_mail_smtp_timeout'])) {
 			$data['config_mail_smtp_timeout'] = $this->request->post['config_mail_smtp_timeout'];
 		} elseif ($this->config->has('config_mail_smtp_timeout')) {
-			$data['config_mail_smtp_timeout'] = $this->config->get('config_mail_smtp_timeout');		
+			$data['config_mail_smtp_timeout'] = $this->config->get('config_mail_smtp_timeout');
 		} else {
 			$data['config_mail_smtp_timeout'] = 5;
-		}	
+		}
 
 		if (isset($this->request->post['config_mail_alert'])) {
 			$data['config_mail_alert'] = $this->request->post['config_mail_alert'];
