@@ -777,7 +777,7 @@ body.layout-boxed-lg #page {
 }
 #topbar .show-mobile .quickaccess-toggle:hover {
   color: #ffffff;
-  background-color: #1CAB8E;
+  background-color: #CC3366;
 }
 #topbar .show-mobile .inner-toggle {
   display: none;
@@ -788,10 +788,10 @@ body.layout-boxed-lg #page {
   min-width: 200px;
   padding: 10px;
   z-index: 99999;
-  border-top: 5px solid #1CAB8E;
-  border-right: 1px solid #1CAB8E;
-  border-left: 1px solid #1CAB8E;
-  border-bottom: 1px solid #1CAB8E;
+  border-top: 5px solid #CC3366;
+  border-right: 1px solid #CC3366;
+  border-left: 1px solid #CC3366;
+  border-bottom: 1px solid #CC3366;
 }
 #topbar .show-mobile .inner-toggle #search-m input {
   width: 100%;
@@ -951,7 +951,7 @@ body.layout-boxed-lg #page {
   background: #333d46;
 }
 .promotion .hightlight-featured-box .carousel-control:hover {
-  background: #1cab8e;
+  background: #CC3366;
 }
 .promotion .product-block {
   border: none;
@@ -2257,6 +2257,9 @@ ul.box-filter span {
   padding: 8px;
   overflow: auto;
 }
+.fa-stack-1x, .fa-stack-2x {
+	color: #f9b229;
+}
 /* 
  *  LISTING PRODUCTS PAGE 
  */
@@ -3189,10 +3192,8 @@ ul.box-filter span {
   border-top-color: #92278F;
 }
 #pav-mainnav .navbar-inverse .navbar-nav li .dropdown-menu {
-  border: none;
   border-radius: 0;
   color: #6a6a6a;
-  box-shadow: none;
   padding: 0;
 }
 #pav-mainnav .navbar-inverse .navbar-nav li .dropdown-menu li {
@@ -3698,8 +3699,8 @@ body,
     display: block;
   }
   .navbar-inverse .navbar-toggle:hover {
-    background-color: #1CAB8E;
-    border-color: #1CAB8E;
+    background-color: #CC3366;
+    border-color: #CC3366;
   }
   .navbar-collapse.collapse {
     display: none !important;
@@ -3798,6 +3799,9 @@ body,
   .col-xs-6 {
     width: 100%;
   }
+    .aboutw{
+	  display: none;
+  }
 }
 /* Iphone 4 + 5 Portrait */
 @media only screen and (min-width: 240px) and (max-width: 320px) {
@@ -3812,6 +3816,9 @@ body,
   }
   .product-info .image-additional {
     padding: 0;
+  }
+    .aboutw{
+	  display: none;
   }
 }
 /* Large desktop */
