@@ -647,6 +647,12 @@ class ControllerProductProduct extends Controller {
 
                 $this->model_catalog_review->addReview($this->request->get['product_id'], $this->request->post);
 
+                if (isset($this->request->post['img'])) {
+                    $review_id = $this->db->getLastId();
+                    foreach ($this->request->post['img'] as $review_image) {
+                        $this->db->query("INSERT INTO " . DB_PREFIX . "review_image SET review_id = '" . (int)$review_id . "', image = '" . $this->db->escape($review_image) . "', sort_order = 0");
+                    }
+                }
                 $json['success'] = $this->language->get('text_success');
             }
         }
