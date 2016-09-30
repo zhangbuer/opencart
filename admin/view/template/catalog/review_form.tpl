@@ -121,7 +121,16 @@
               </select>
             </div>
           </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="input-status">review images</label>
+            <div class="col-sm-10">
+              <?php foreach($data['review_images'] as $item): ?>
+              <a href="//img.sodahair.com/<?php echo $item['image']; ?>"><img src="//img.sodahair.com/<?php echo $item['image']; ?>" class="img-thumbnail" width="200" height="200"/></a>
+              <?php endforeach; ?>
+            </div>
+          </div>
         </form>
+        
       </div>
     </div>
   </div>

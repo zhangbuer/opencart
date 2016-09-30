@@ -283,6 +283,12 @@ $('button[id^=\'button-s3-upload\']').on('click', function() {
                                         name: 'img[]',
                                         value: json['code']
                                     }).appendTo($(node).parent());
+                                    $('<img>').attr({
+                                      src:'//img.sodahair.com/'+json['code'],
+                                      class:"img-thumbnail",
+                                      width:200,
+                                      height:200
+                                    }).appendTo($('#images_preview'));
                             }
                     },
                     error: function(xhr, ajaxOptions, thrownError) {

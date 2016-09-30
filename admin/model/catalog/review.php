@@ -40,6 +40,12 @@ class ModelCatalogReview extends Model {
 		return $query->row;
 	}
 
+	public function getReviewImages($reviewId)
+	{
+	    $query = $this->db->query("SELECT * FROM `".DB_PREFIX."review_image` WHERE `review_id` = '".(int)$reviewId."'");
+	    return $query->rows;
+	}
+
 	public function getReviews($data = array()) {
 		$sql = "SELECT r.review_id, pd.name, r.author, r.rating, r.status, r.date_added FROM " . DB_PREFIX . "review r LEFT JOIN " . DB_PREFIX . "product_description pd ON (r.product_id = pd.product_id) WHERE pd.language_id = '" . (int)$this->config->get('config_language_id') . "'";
 

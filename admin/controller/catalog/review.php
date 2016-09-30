@@ -493,6 +493,7 @@ class ControllerCatalogReview extends Controller {
 
 		if (isset($this->request->get['review_id']) && ($this->request->server['REQUEST_METHOD'] != 'POST')) {
 			$review_info = $this->model_catalog_review->getReview($this->request->get['review_id']);
+			$data['review_images'] = $this->model_catalog_review->getReviewImages($this->request->get['review_id']);
 		}
 
 		$data['token'] = $this->session->data['token'];

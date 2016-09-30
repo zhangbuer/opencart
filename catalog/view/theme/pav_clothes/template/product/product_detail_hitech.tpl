@@ -308,6 +308,10 @@
                         </div>
                     </div>
                     <div class="form-group">
+                        <div class="col-sm-12" id="images_preview">
+                        </div>
+                    </div>
+                    <div class="form-group">
                         <div class="col-sm-12">
                             <button type="button" id="button-s3-upload" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-primary">
                                 <i class="fa fa-upload"></i> <?php echo $button_upload; ?>
