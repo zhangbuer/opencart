@@ -9,4 +9,5 @@
 /system/logs/*.log
 /system/storage/cache/cache.*
 /system/storage/logs/*.log
+/system/upload/*
 
