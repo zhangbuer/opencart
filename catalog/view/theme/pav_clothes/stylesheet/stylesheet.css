@@ -2226,11 +2226,12 @@ ul.box-filter span {
   position: relative;
   margin-bottom: 20px;
 }
-.category-info .image {
+/*.category-info .image {
   margin-bottom: 10px;
-}
+}*/
 .category-info .description {
   margin-bottom: 20px;
+  display:none;
 }
 /* manufacturer */
 .manufacturer-heading {
@@ -3749,6 +3750,12 @@ body,
   table.pav-shop-cart thead {
     display: none;
   }
+  .aboutw{
+	  display: none;
+  }
+  .box-description{
+	  display: none;
+  }
 }
 @media only screen and (min-width: 600px) and (max-width: 766px) {
   .tp-caption,
@@ -3764,6 +3771,12 @@ body,
   }
   .col-xs-6 {
     width: 100%;
+  }
+  .aboutw{
+	  display: none;
+  }
+  .box-description{
+	  display: none;
   }
 }
 /* Iphone 4 landscape */
@@ -3802,6 +3815,9 @@ body,
     .aboutw{
 	  display: none;
   }
+  .box-description{
+	  display: none;
+  }
 }
 /* Iphone 4 + 5 Portrait */
 @media only screen and (min-width: 240px) and (max-width: 320px) {
@@ -3818,6 +3834,9 @@ body,
     padding: 0;
   }
     .aboutw{
+	  display: none;
+  }
+  .box-description{
 	  display: none;
   }
 }

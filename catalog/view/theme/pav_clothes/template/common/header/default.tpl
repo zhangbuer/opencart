@@ -10,7 +10,7 @@
 			
 
 			<li><a class="shoppingcart" href="<?php echo $shopping_cart; ?>"><span class="icon fa fa-shopping-cart"></span><span class="text-link hidden-xs hidden-sm"><?php echo $text_shopping_cart; ?></span></a></li>
-			<li><a class="last checkout" href="<?php echo $checkout; ?>"><span class="icon fa fa-file"></span><span class="text-link hidden-xs hidden-sm"><?php echo $text_checkout; ?></span></a></li> 
+			<!--<li><a class="last checkout" href="<?php echo $checkout; ?>"><span class="icon fa fa-file"></span><span class="text-link hidden-xs hidden-sm"><?php echo $text_checkout; ?></span></a></li>--> 
 			<li  class="login">
 				<?php if ($logged) { ?>
 			    	<a href="<?php echo $logout; ?>"><?php echo $text_logout; ?></a>
@@ -19,6 +19,8 @@
 				    <a href="<?php echo $login; ?>"><?php echo $text_login; ?></a>  
 			    <?php } ?>
 			</li>
+            <li ><a class="shoppingcart" href="http://sodahair.com/index.php?route=information/contact"><span class="icon fa fa-phone"></span><span style="font-weight: bold; margin-left: 5px;">+123546789</span> <span class="text-link hidden-xs hidden-sm">(Service time:9:00 - 18:00)</span></a></li>
+</ul>
 		</ul>
 	</div>
 	<div class="pull-right">
