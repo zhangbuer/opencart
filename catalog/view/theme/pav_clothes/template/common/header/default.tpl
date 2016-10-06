@@ -19,7 +19,6 @@
 				    <a href="<?php echo $login; ?>"><?php echo $text_login; ?></a>  
 			    <?php } ?>
 			</li>
-            <li ><a class="shoppingcart" href="http://sodahair.com/index.php?route=information/contact"><span class="icon fa fa-phone"></span><span style="font-weight: bold; margin-left: 5px;">+123546789</span> <span class="text-link hidden-xs hidden-sm">(Service time:9:00 - 18:00)</span></a></li>
 </ul>
 		</ul>
 	</div>
@@ -111,7 +110,14 @@
 					</div>
 				<?php } ?>
 			</div>
-			<div class="pull-right inner">
+            <div style="width:66%; float:right"><img src="http://sodahair.com/image/catalog/demo/slider/Telephone.jpg"></div>
+		</div>
+		<div class="pull-right inner hidden-xs hidden-sm">
+			<?php echo $cart; ?>	
+		</div>
+        
+	</div>
+    <div style="clear:both;" class="pull-left inner">
 				<div id="pav-mainnav">
 					<div class="container">
 						<div class="navbar navbar-inverse">
@@ -177,11 +183,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="pull-right inner hidden-xs hidden-sm">
-			<?php echo $cart; ?>	
-		</div>
-	</div>
+    
 </div>  
 </header>
 </div>

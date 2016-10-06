@@ -131,19 +131,20 @@
 <div id="powered">
   <div class="container">
     <div class="inner clearfix">
-      <div class="copyright pull-left">
+      
+      <?php if( $content=$helper->getLangConfig('widget_paypal') ) {?>
+        <div class="paypal">
+          <?php echo $content; ?>
+        </div>
+      <?php } ?>
+      
+      <div class="copyright">
         <?php if( $helper->getConfig('enable_custom_copyright', 0) ) { ?>
           <?php echo $helper->getConfig('copyright'); ?>
         <?php } else { ?>
           <?php echo $powered; ?>. 
         <?php } ?>
       </div>
-      
-      <?php if( $content=$helper->getLangConfig('widget_paypal') ) {?>
-        <div class="paypal pull-right">
-          <?php echo $content; ?>
-        </div>
-      <?php } ?>
     </div>   
   </div>
 </div>
