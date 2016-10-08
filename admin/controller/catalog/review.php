@@ -548,6 +548,14 @@ class ControllerCatalogReview extends Controller {
 			$data['status'] = '';
 		}
 
+		if (isset($this->request->post['date_added'])) {
+		    $data['date_added'] = $this->request->post['date_added'];
+		} elseif (!empty($review_info)) {
+		    $data['date_added'] = $review_info['date_added'];
+		} else {
+		    $data['date_added'] = '';
+		}
+
 		$data['header'] = $this->load->controller('common/header');
 		$data['column_left'] = $this->load->controller('common/column_left');
 		$data['footer'] = $this->load->controller('common/footer');

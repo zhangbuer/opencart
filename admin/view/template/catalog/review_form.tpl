@@ -122,6 +122,19 @@
             </div>
           </div>
           <div class="form-group">
+              <label class="col-sm-2 control-label" for="input-date-added">Date Added</label>
+              <div class="col-sm-3">
+                  <div class="input-group date">
+                  <input type="text" name="date_added" value="<?php echo $date_added; ?>" 
+                  placeholder="Date Added" 
+                  data-date-format="YYYY-MM-DD HH:mm" id="input-date-added" class="form-control">
+                  <span class="input-group-btn">
+                      <button type="button" class="btn btn-default"><i class="fa fa-calendar"></i></button>
+                  </span>
+                  </div>
+              </div>
+          </div>
+          <div class="form-group">
             <label class="col-sm-2 control-label" for="input-status">review images</label>
             <div class="col-sm-10">
               <?php foreach($data['review_images'] as $item): ?>
@@ -155,5 +168,6 @@ $('input[name=\'product\']').autocomplete({
 		$('input[name=\'product_id\']').val(item['value']);		
 	}	
 });
+$('.date').datetimepicker();
 //--></script></div>
 <?php echo $footer; ?>
