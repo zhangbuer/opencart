@@ -232,6 +232,8 @@
                     <img style="height:37px;" src="/image/sodahair/paypal-checkout.png"/>
                 </a>
                 </div>
+                <div>
+  <img style="height:30px;" src="http://sodahair.com/image/catalog/demo/slider/payment-3.jpg"></div>
             </div>
         </div>
 
@@ -305,17 +307,6 @@
                             <label class="control-label" for="input-review"><?php echo $entry_review; ?></label>
                             <textarea name="text" rows="5" id="input-review" class="form-control"></textarea>
                             <div class="help-block"><?php echo $text_note; ?></div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-sm-12" id="images_preview">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="col-sm-12">
-                            <button type="button" id="button-s3-upload" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-primary">
-                                <i class="fa fa-upload"></i> <?php echo $button_upload; ?>
-                            </button>
                         </div>
                     </div>
                     <div class="form-group">

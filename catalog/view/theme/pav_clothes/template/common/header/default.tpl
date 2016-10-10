@@ -110,7 +110,7 @@
 					</div>
 				<?php } ?>
 			</div>
-            <div style="width:66%; float:right"><img src="http://sodahair.com/image/catalog/demo/slider/Telephone.jpg"></div>
+            <div style="width:66%; float:right; margin: 10px;"><img src="http://sodahair.com/image/catalog/demo/slider/Telephone2.jpg"></div>
 		</div>
 		<div class="pull-right inner hidden-xs hidden-sm">
 			<?php echo $cart; ?>	
