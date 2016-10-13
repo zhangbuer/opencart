@@ -310,6 +310,17 @@
                         </div>
                     </div>
                     <div class="form-group">
+                        <div class="col-sm-12" id="images_preview">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-12">
+                            <button type="button" id="button-s3-upload" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-primary">
+                                <i class="fa fa-upload"></i> <?php echo $button_upload; ?>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="form-group">
                         <div class="col-sm-12">
                             <label class="control-label"><?php echo $entry_rating; ?></label>
                             &nbsp;&nbsp;&nbsp; <?php echo $entry_bad; ?>&nbsp;
