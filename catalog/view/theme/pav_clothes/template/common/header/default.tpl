@@ -110,7 +110,10 @@
 					</div>
 				<?php } ?>
 			</div>
-            <div style="width:66%; float:right; margin: 10px;"><img src="http://sodahair.com/image/catalog/demo/slider/Telephone2.jpg"></div>
+            <div style="width: 66%; margin: 10px 0 10px 30px; float: left;"><img src="http://sodahair.com/image/catalog/demo/slider/Telephone2.jpg"></div>
+            <div style="font-weight: bold; font-size: 40px;"> <a href=" https://www.facebook.com/sodahairweave/" class="fb fa fa-facebook-square"></a>                                                                          <a href="https://www.instagram.com/sodahairweave/" class="twit  fa fa-linkedin-square"></a>                                                                         <a href="https://www.pinterest.com/sodahairweave/" class="gogl fa fa-pinterest-square"></a>
+        <a href="#" class="fa fa-twitter-square"></a>
+<a href="#" class="fa fa-youtube-square"></a></div>
 		</div>
 		<div class="pull-right inner hidden-xs hidden-sm">
 			<?php echo $cart; ?>	

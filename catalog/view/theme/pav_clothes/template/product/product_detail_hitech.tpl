@@ -232,8 +232,8 @@
                     <img style="height:37px;" src="/image/sodahair/paypal-checkout.png"/>
                 </a>
                 </div>
-                <div>
-  <img style="height:30px;" src="http://sodahair.com/image/catalog/demo/slider/payment-3.jpg"></div>
+<div style="clear: both; line-height: 40px; font-weight: bold;">Payment:
+  <img style="height:40px;" src="http://sodahair.com/image/catalog/demo/slider/payment-4.jpg"></div>
             </div>
         </div>
 
