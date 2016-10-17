@@ -112,7 +112,7 @@ class ControllerPaymentPPExpress extends Controller {
 		if ($this->config->get('pp_express_test') == 1) {
 			header('Location: https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=' . $result['TOKEN']);
 		} else {
-			header('Location: https://www.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=' . $result['TOKEN'].'&useraction=continue#/checkout/guest');
+			header('Location: https://www.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=' . $result['TOKEN']);
 		}
 	}
 
@@ -1507,7 +1507,7 @@ class ControllerPaymentPPExpress extends Controller {
 
 			if (isset($result['REDIRECTREQUIRED']) && $result['REDIRECTREQUIRED'] == true) {
 				//- handle german redirect here
-				$this->response->redirect('https://www.paypal.com/cgi-bin/webscr?cmd=_complete-express-checkout&token=' . $this->session->data['paypal']['token']);
+				$this->response->redirect('https://www.paypal.com/cgi-bin/webscr?cmd=_complete-express-checkout&token=' . $this->session->data['paypal']['token'].'&useraction=continue#/checkout/guest');
 			} else {
 				$this->response->redirect($this->url->link('checkout/success'));
 			}
