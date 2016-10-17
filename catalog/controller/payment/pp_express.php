@@ -112,7 +112,7 @@ class ControllerPaymentPPExpress extends Controller {
 		if ($this->config->get('pp_express_test') == 1) {
 			header('Location: https://www.sandbox.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=' . $result['TOKEN']);
 		} else {
-			header('Location: https://www.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=' . $result['TOKEN']);
+			header('Location: https://www.paypal.com/cgi-bin/webscr?cmd=_express-checkout&token=' . $result['TOKEN'].'&useraction=continue#/checkout/guest');
 		}
 	}
 
