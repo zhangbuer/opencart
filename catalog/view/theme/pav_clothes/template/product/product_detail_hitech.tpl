@@ -263,7 +263,9 @@
         <li><a href="#tab-guarantee" data-toggle="tab">Guarantee</a></li>
     </ul>
     <div class="tab-content">
-        <div class="tab-pane active" id="tab-description"><?php echo $description; ?></div>
+        <div class="tab-pane active" id="tab-description"><?php echo $description; ?>
+            <?php require( PAVO_THEME_DIR."/template/product/sodahair_detail.tpl" ); ?>
+        </div>
         <?php if ($attribute_groups) { ?>
             <div class="tab-pane" id="tab-specification">
                 <table class="table table-bordered">
