@@ -76,7 +76,7 @@ class ControllerPaymentPPExpress extends Controller {
 			'NOSHIPPING'         => $shipping,
 			'ALLOWNOTE'          => $this->config->get('pp_express_allow_note'),
 			'LOCALECODE'         => 'EN',
-			'LANDINGPAGE'        => 'Login',
+			'LANDINGPAGE'        => 'Billing',
 			'HDRIMG'             => $this->model_tool_image->resize($this->config->get('pp_express_logo'), 790, 90),
 			'PAYFLOWCOLOR'       => $this->config->get('pp_express_page_colour'),
 			'CHANNELTYPE'        => 'Merchant'
@@ -1300,7 +1300,7 @@ class ControllerPaymentPPExpress extends Controller {
 			'REQCONFIRMSHIPPING' => 0,
 			'NOSHIPPING'         => $shipping,
 			'LOCALECODE'         => 'EN',
-			'LANDINGPAGE'        => 'Login',
+			'LANDINGPAGE'        => 'Billing',
 			'HDRIMG'             => $this->model_tool_image->resize($this->config->get('pp_express_logo'), 790, 90),
 			'PAYFLOWCOLOR'       => $this->config->get('pp_express_page_colour'),
 			'CHANNELTYPE'        => 'Merchant',
@@ -1507,7 +1507,7 @@ class ControllerPaymentPPExpress extends Controller {
 
 			if (isset($result['REDIRECTREQUIRED']) && $result['REDIRECTREQUIRED'] == true) {
 				//- handle german redirect here
-				$this->response->redirect('https://www.paypal.com/cgi-bin/webscr?cmd=_complete-express-checkout&token=' . $this->session->data['paypal']['token'].'&useraction=continue#/checkout/guest');
+				$this->response->redirect('https://www.paypal.com/cgi-bin/webscr?cmd=_complete-express-checkout&token=' . $this->session->data['paypal']['token']);
 			} else {
 				$this->response->redirect($this->url->link('checkout/success'));
 			}
