@@ -51,8 +51,11 @@
             <div class="price">
                 <ul class="list-unstyled">
                     <?php if (!$special) { ?>
+                    <li>
+                            <span id="original_price"></span>
+                        </li>
                         <li class="price-gruop">
-                            <span class="text-price"> <?php echo $price; ?> </span>
+                            <span id="text-price" class="text-price"> <?php echo $price; ?> </span>
                         </li>
                     <?php } else { ?>
 
@@ -380,4 +383,10 @@ $(function(){
     });
 
 });
+</script>
+<script>
+var x=document.getElementById("text-price").innerText;
+var y=1.15;
+var z=x*y;
+document.getElementById("original_price").innerHTML=z;
 </script>

@@ -6,7 +6,7 @@
 	      	<?php if( $product['special'] ) {   ?>
 	    	<span class="product-label-special label"><span class="special"><?php echo $objlang->get( 'text_sale' ); ?></span></span>
 	    	<?php } ?>
-            <div class="sale_badge">-10%</div>
+            <div class="sale_badge">-15%off</div>
 			<a class="img" href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" class="img-responsive" /></a>
 			<?php if ($quickview){ ?>
 			<a class="iframe-link pav-colorbox hidden-sm hidden-xs" href="<?php echo $ourl->link('themecontrol/product','product_id='.$product['product_id']);?>"  title="<?php echo $objlang->get('quick_view'); ?>" ><span class='fa fa-eye'></span></a>

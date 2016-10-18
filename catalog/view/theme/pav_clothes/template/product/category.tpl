@@ -39,7 +39,7 @@ echo $header; ?>
 						<div class="col-lg-<?php echo $ncol; ?> col-md-3 col-sm-4"><div class="category-item">
 							<?php if( $category['thumb'] ){ ?>
 								   <div class="image">
-                                   <div class="sale_badge">-10%</div>
+                                   
                       <a href="<?php echo $category['href']; ?>">
                         <img src="<?php echo $category['thumb']; ?>" alt="<?php echo $category['name']; ?>" class="img-responsive" />
                       </a>
