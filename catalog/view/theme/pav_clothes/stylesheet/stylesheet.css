@@ -3672,7 +3672,7 @@ body,
     width: 20%;
   }
   .social_wep {
-	  display:none;
+	  display:none !important;
   }
 }
 @media only screen and (max-width: 990px) {
@@ -3727,7 +3727,7 @@ body,
     display: none !important;
   }
     .social_wep {
-	  display:none;
+	  display:none !important;
   }
 }
 @media only screen and (max-width: 749px) {
@@ -3774,7 +3774,7 @@ body,
 	  display: none;
   }
     .social_wep {
-	  display:none;
+	  display:none !important;
   }
 }
 @media only screen and (min-width: 600px) and (max-width: 766px) {
@@ -3799,10 +3799,10 @@ body,
 	  display: none;
   }
     .social_wep {
-	  display:none;
+	  display:none !important;
   }
   .lianx_img {
-	  display: none;
+	  display: none !important;
   }
 }
 /* Iphone 4 landscape */
@@ -3845,10 +3845,10 @@ body,
 	  display: none;
   }
     .social_wep {
-	  display:none;
+	  display:none !important;
   }
     .lianx_img {
-	  display: none;
+	  display: none !important;
   }
 }
 /* Iphone 4 + 5 Portrait */
@@ -3872,10 +3872,10 @@ body,
 	  display: none;
   }
     .social_wep {
-	  display:none;
+	  display:none !important;
   }
     .lianx_img {
-	  display: none;
+	  display: none !important;
   }
 }
 /* Large desktop */
@@ -3895,7 +3895,7 @@ body,
     width: 65%;
   }
     .social_wep {
-	  display:none;
+	  display:none !important;
   }
 }
 /*Ipad Portrait*/
@@ -3908,7 +3908,7 @@ body,
     left: 155px;
   }
     .social_wep {
-	  display:none;
+	  display:none !important;
   }
 }
 /* Iphone 5 landscape */

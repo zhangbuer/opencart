@@ -2,8 +2,8 @@
   <div>
     <h2><?php echo $heading_title; ?> </h2>
   </div>
-  <div id="collapse-coupon" class="panel-collapse collapse">
-    <div class="panel-body">
+  <div id="collapse-coupon">
+    <div>
       <p><?php echo $entry_coupon; ?></p>
       <div class="input-group">
         <input type="text" name="coupon" value="<?php echo $coupon; ?>" placeholder="<?php echo $entry_coupon; ?>" id="input-coupon" />
