@@ -3671,9 +3671,6 @@ body,
     position: relative;
     width: 20%;
   }
-  .social_wep {
-	  display:none !important;
-  }
 }
 @media only screen and (max-width: 990px) {
   .pavo-widget iframe {
@@ -3798,11 +3795,8 @@ body,
   .box-description{
 	  display: none;
   }
-    .social_wep {
+  .social_wep {
 	  display:none !important;
-  }
-  .lianx_img {
-	  display: none !important;
   }
 }
 /* Iphone 4 landscape */
