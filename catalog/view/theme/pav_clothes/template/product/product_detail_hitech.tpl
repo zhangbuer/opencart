@@ -267,11 +267,11 @@
     </ul>
     <div class="tab-content">
         <div class="tab-pane active" id="tab-description">
-            <?php if(!empty(trim($description))): ?>
-                <?php echo $description; ?>
-            <?php else: ?>
+            <?php if(empty(trim($description))){ ?>
                 <?php require( PAVO_THEME_DIR."/template/product/sodahair_detail.tpl" ); ?>
-            <?php endif ?>
+            <?php }else{ ?>
+                <?php echo $description; ?>
+            <?php } ?>
         </div>
         <?php if ($attribute_groups) { ?>
             <div class="tab-pane" id="tab-specification">
