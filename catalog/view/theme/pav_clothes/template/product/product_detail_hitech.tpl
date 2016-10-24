@@ -267,7 +267,7 @@
     </ul>
     <div class="tab-content">
         <div class="tab-pane active" id="tab-description">
-            <?php if(!empty($description)): ?>
+            <?php if(!empty(trim($description))): ?>
                 <?php echo $description; ?>
             <?php else: ?>
                 <?php require( PAVO_THEME_DIR."/template/product/sodahair_detail.tpl" ); ?>
