@@ -24,7 +24,7 @@
                             <span class="fa fa-stack"><i class="fa fa-star fa-stack-1x"></i><i class="fa fa-star-o fa-stack-1x"></i></span>
                         <?php } ?>
                     <?php } ?>
-                    <a href="#review-form" onclick="$('a[href=\'#tab-review\']').trigger('click'); return false;" ><?php echo $reviews; ?></a> / <a href="#review-form"  class="popup-with-form" onclick="$('a[href=\'#tab-review\']').trigger('click'); return false;" ><?php echo $text_write; ?></a></p>
+                    <a href="#review-form" onclick="$('a[href=\'#tab-review\']').trigger('click'); $('#tab-description').scrollToMe(); return false;" ><?php echo $reviews; ?></a> / <a href="#review-form"  class="popup-with-form" onclick="$('a[href=\'#tab-review\']').trigger('click'); return false;" ><?php echo $text_write; ?></a></p>
             </div>
         <?php } ?>
 
@@ -386,6 +386,11 @@
 </div>
 
 <script>
+jQuery.fn.extend({
+ scrollToMe: function () {
+   var x = jQuery(this).offset().top - 100;
+   jQuery('html,body').animate({scrollTop: x}, 400);
+}});
 $(function(){
     var defaultPrice = $('#product input[type=radio]:first').attr('price');
     undefined !== defaultPrice && $('.text-price').text(defaultPrice);
