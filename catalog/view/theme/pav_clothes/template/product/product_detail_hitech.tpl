@@ -391,13 +391,8 @@ $(function(){
     undefined !== defaultPrice && $('.text-price').text(defaultPrice);
     $('#product input[type=radio]').click(function(){
         $('.text-price').text($(this).attr('price'));
+        $('#original_price').text($(this).attr('original_price'));
     });
 
 });
-</script>
-<script>
-var x=document.getElementById("text-price").innerText;
-var y=1.15;
-var z=x*y;
-document.getElementById("original_price").innerHTML=z;
 </script>
