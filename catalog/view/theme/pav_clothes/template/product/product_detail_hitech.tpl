@@ -264,6 +264,7 @@
             <li><a href="#tab-review" data-toggle="tab"><?php echo $tab_review; ?></a></li>
         <?php } ?>
         <li><a href="#tab-guarantee" data-toggle="tab">Guarantee</a></li>
+        <li><a href="#tab-shipping" data-toggle="tab">Shipping & Payment</a></li>
     </ul>
     <div class="tab-content">
         <div class="tab-pane active" id="tab-description">
@@ -374,6 +375,9 @@
 
         6. Unit Weight 100G
         </pre>
+        </div>
+        <div class="tab-pane"  id="tab-shipping">
+        <img src="http://img.sodahair.com/20161025/dbbf437ccb7d2a5d938ba10bfe94e841_11.jpg" alt="Shipping & Payment"/>
         </div>
     </div>
 </div>
