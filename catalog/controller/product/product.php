@@ -303,7 +303,9 @@ class ControllerProductProduct extends Controller {
             }
 
             if (($this->config->get('config_customer_price') && $this->customer->isLogged()) || !$this->config->get('config_customer_price')) {
-                $data['price'] = $this->currency->format($this->tax->calculate($product_info['price'], $product_info['tax_class_id'], $this->config->get('config_tax')));
+                $price_value = $this->tax->calculate($product_info['price'], $product_info['tax_class_id'], $this->config->get('config_tax'));
+                $data['original_price'] = $this->currency->format($price_value*1.15);
+                $data['price'] = $this->currency->format($price_value);
             } else {
                 $data['price'] = false;
             }
