@@ -52,7 +52,7 @@
                 <ul class="list-unstyled">
                     <?php if (!$special) { ?>
                     <li>
-                            <span id="original_price"></span>
+                            <span id="original_price"><?php echo $original_price; ?></span>
                         </li>
                         <li class="price-gruop">
                             <span id="text-price" class="text-price"> <?php echo $price; ?> </span>
