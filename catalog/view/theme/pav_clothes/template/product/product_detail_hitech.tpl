@@ -389,6 +389,10 @@
 $(function(){
     var defaultPrice = $('#product input[type=radio]:first').attr('price');
     undefined !== defaultPrice && $('.text-price').text(defaultPrice);
+
+    var defaultOriginalPrice = $('#product input[type=radio]:first').attr('original_price');
+    undefined !== defaultOriginalPrice && $('#original_price').text(defaultOriginalPrice);
+
     $('#product input[type=radio]').click(function(){
         $('.text-price').text($(this).attr('price'));
         $('#original_price').text($(this).attr('original_price'));
