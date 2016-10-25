@@ -403,7 +403,9 @@ class ControllerProductProduct extends Controller {
                 }
 
                 if (($this->config->get('config_customer_price') && $this->customer->isLogged()) || !$this->config->get('config_customer_price')) {
-                    $price = $this->currency->format($this->tax->calculate($result['price'], $result['tax_class_id'], $this->config->get('config_tax')));
+                    $price_value = $this->tax->calculate($result['price'], $result['tax_class_id'], $this->config->get('config_tax'));
+                    $original_price = $this->currency->format($price_value*1.15);
+                    $price = $this->currency->format($price_value);
                     $min_price = $this->currency->format($this->tax->calculate($result['min_price'], $result['tax_class_id'], $this->config->get('config_tax')));
                     $max_price = $this->currency->format($this->tax->calculate($result['max_price'], $result['tax_class_id'], $this->config->get('config_tax')));
                 } else {
@@ -433,6 +435,7 @@ class ControllerProductProduct extends Controller {
                     'thumb'       => $image,
                     'name'        => $result['name'],
                     'description' => utf8_substr(strip_tags(html_entity_decode($result['description'], ENT_QUOTES, 'UTF-8')), 0, $this->config->get('config_product_description_length')) . '..',
+                    'original_price' => $original_price,
                     'price'       => $price,
                     'min_price' => $min_price,
                     'max_price' => $max_price,
