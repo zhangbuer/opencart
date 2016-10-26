@@ -1,6 +1,7 @@
 <?php $objlang = $this->registry->get('language'); ?>
 <?php if ($thumb || $images) { ?>
 <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 image-container">
+<div class="sale_badge">-15%off</div>
     <?php if ($thumb) { ?>
     <div id="img-detail" class="image"> 
         <?php if( $special )  { ?>          
