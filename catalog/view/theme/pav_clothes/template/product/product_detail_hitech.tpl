@@ -235,10 +235,10 @@
                 </div>
                 <div class="cart" style=" background-color: #cc3366;">
                   <i class="fa fa-flash"></i>
-        <a href="http://sodahair.com/index.php?route=checkout/cart">          <button type="button" id="button-cart" data-loading-text="<?php echo $text_loading; ?>" class="btn button">buy now</button></a>
+                  <button type="button" id="button-buy" data-loading-text="<?php echo $text_loading; ?>" class="btn button">buy now</button>
                 </div>
                 <div class="wishlist-compare">
-                <a href="/index.php?route=payment/pp_express/express" id="button-buy" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-block">
+                <a href="/index.php?route=payment/pp_express/express" id="button-paypal" data-loading-text="<?php echo $text_loading; ?>" class="btn btn-block">
                   <span>-OR- </span>  <img style="height:37px;" src="/image/sodahair/paypal-checkout.png"/>
                 </a>
                 </div>
