@@ -33,7 +33,7 @@
         <div class="pull-right">
              <!-- PayPal Logo -->
 			 <table border="0" cellpadding="10" cellspacing="0" align="center"><tr><td align="center">
-			 <a href="<?php echo $checkout; ?>" title="How PayPal Works">
+			 <a href="/index.php?route=payment/pp_express/express" title="How PayPal Works">
 			     <img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/checkout-logo-large.png" alt="Check out with PayPal" /></a>
 			 </td></tr></table>
 			 <!-- PayPal Logo -->
@@ -125,7 +125,7 @@
          <img src="http://sodahair.com/image/catalog/demo/slider/paypalLOGO_zps272a1a90.jpg"> <div class="pull-right">
                <!-- PayPal Logo --><table border="0" cellpadding="10" cellspacing="0" align="center">
 			   <tr><td align="center">
-			   <a href="<?php echo $checkout; ?>" title="How PayPal Works">
+			   <a href="/index.php?route=payment/pp_express/express" title="How PayPal Works">
 			       <img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/checkout-logo-large.png" alt="Check out with PayPal" />
 			   </a>
 			   </td></tr>
