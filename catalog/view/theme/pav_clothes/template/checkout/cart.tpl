@@ -31,7 +31,12 @@
         <?php } ?>
       </h1>
         <div class="pull-right">
-             <!-- PayPal Logo --><table border="0" cellpadding="10" cellspacing="0" align="center"><tr><td align="center"><a href="https://www.paypal.com/c2/webapps/mpp/paypal-popup?locale.x=zh_C2" title="How PayPal Works" onclick="javascript:window.open('https://www.paypal.com/c2/webapps/mpp/paypal-popup?locale.x=zh_C2','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;"><img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/checkout-logo-large.png" alt="Check out with PayPal" /></a></td></tr></table><!-- PayPal Logo -->
+             <!-- PayPal Logo -->
+			 <table border="0" cellpadding="10" cellspacing="0" align="center"><tr><td align="center">
+			 <a href="<?php echo $checkout; ?>" title="How PayPal Works">
+			     <img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/checkout-logo-large.png" alt="Check out with PayPal" /></a>
+			 </td></tr></table>
+			 <!-- PayPal Logo -->
           </div>
       </div>
       <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data">
@@ -118,7 +123,13 @@
       </div>
       <div class="buttons" style="border-top:solid 1px #e5e5e5;">
          <img src="http://sodahair.com/image/catalog/demo/slider/paypalLOGO_zps272a1a90.jpg"> <div class="pull-right">
-               <!-- PayPal Logo --><table border="0" cellpadding="10" cellspacing="0" align="center"><tr><td align="center"><a href="https://www.paypal.com/c2/webapps/mpp/paypal-popup?locale.x=zh_C2" title="How PayPal Works" onclick="javascript:window.open('https://www.paypal.com/c2/webapps/mpp/paypal-popup?locale.x=zh_C2','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;"><img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/checkout-logo-large.png" alt="Check out with PayPal" /></a></td></tr></table><!-- PayPal Logo -->
+               <!-- PayPal Logo --><table border="0" cellpadding="10" cellspacing="0" align="center">
+			   <tr><td align="center">
+			   <a href="<?php echo $checkout; ?>" title="How PayPal Works">
+			       <img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/checkout-logo-large.png" alt="Check out with PayPal" />
+			   </a>
+			   </td></tr>
+			   </table><!-- PayPal Logo -->
           </div>
       </div>
    <!--<div class="buttons">
