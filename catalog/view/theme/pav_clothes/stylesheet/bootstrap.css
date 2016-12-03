@@ -5601,9 +5601,9 @@ td.hidden-xs {
   display: table-cell !important;
 }
 @media (max-width: 767px) {
-  /*.hidden-xs {
+  .hidden-xs {
     display: none !important;
-  }*/
+  }
   tr.hidden-xs {
     display: none !important;
   }
