@@ -132,7 +132,7 @@ $('#button-cart').on('click', function() {
                 }
         });
 });
-$('#button-paypal,#button-buy').on('click', function(event) {
+$('#button-paypal').on('click', function(event) {
     event.preventDefault();
     $.ajax({
         url: 'index.php?route=checkout/cart/add',
@@ -183,7 +183,6 @@ $('#button-paypal,#button-buy').on('click', function(event) {
         }
     });
 });
-/*
 $('#button-buy').on('click', function(event) {
     event.preventDefault();
     $.ajax({
@@ -235,7 +234,6 @@ $('#button-buy').on('click', function(event) {
         }
     });
 });
-*/
 //--></script> 
 <script type="text/javascript"><!--
 $('.date').datetimepicker({
