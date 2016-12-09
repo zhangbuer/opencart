@@ -148,6 +148,14 @@
     </div>   
   </div>
 </div>
+<div class="border-top border-dark-silver bg-white" style="display:none;">
+          <div class="container">
+            <div class="center px3 my2 line-height-4">
+              <div class="medium f4 gray">Need Help?</div>
+              <div class="gray light f5"><span class="hide-on-tb-dt"></span><span class="hide-on-mb">+1 (646) 934-6206</span><!-- react-text: 535 --> | info@sodahair.com<!-- /react-text --></div>
+            </div>
+          </div>
+        </div>
 <?php if( $helper->getConfig('enable_paneltool',0) ){  ?>
   <?php  echo $helper->renderAddon( 'panel' );?>
 <?php } ?>

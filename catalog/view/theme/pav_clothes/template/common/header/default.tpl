@@ -1,3 +1,7 @@
+<div class="top_banner" style="background: rgb(210, 0, 0) none repeat scroll 0% 0%;">
+  <div background-color="#d20000" class="lazyload ma_lazyload" style="width: 990px; height: 60px; margin: auto;"><img  src="http://sodahair.com/image/catalog/demo/slider/20161201100429.jpg"> </div>
+</div>
+
 <div id="header">
 <nav id="topbar" class="topbar clearfix">
   <div class="container">
@@ -110,10 +114,9 @@
 					</div>
 				<?php } ?>
 			</div>
-            <div class="lianx_img" style="width: 66%; margin: 10px 0 10px 30px; float: left;"><img src="http://sodahair.com/image/catalog/demo/slider/Telephone2.jpg"></div>
+            <div class="lianx_img" style="width: 66%; margin: 10px 0 10px 30px; float: left;"><img src="http://sodahair.com/image/catalog/demo/slider/Telephone3.jpg"></div>
             <div class="social_wep" style="font-weight: bold; font-size: 40px;"> <a href=" https://www.facebook.com/sodahairweave/" class="fb fa fa-facebook-square"></a>                                                                          <a href="https://www.instagram.com/sodahairweave/" class="twit  fa fa-linkedin-square"></a>                                                                         <a href="https://www.pinterest.com/sodahairweave/" class="gogl fa fa-pinterest-square"></a>
-        <a href="#" class="fa fa-twitter-square"></a>
-<a href="#" class="fa fa-youtube-square"></a></div>
+<a href="https://www.youtube.com/channel/UC9T-VzhgNJ3AssY9NZPD6KQ" class="fa fa-youtube-square"></a></div>
 		</div>
 		<div class="pull-right inner hidden-xs hidden-sm">
 			<?php echo $cart; ?>	
