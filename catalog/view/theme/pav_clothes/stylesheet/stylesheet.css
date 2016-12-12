@@ -882,9 +882,9 @@ body.layout-boxed-lg #page {
   display: inline-block;
 }
 #header-main #logo-theme a {
-  background: url('../image/catalog/demo/slider/logo-2.png') no-repeat scroll 0 16px rgba(0, 0, 0, 0);
-  width: 151px;
-  height: 65px;
+  background: url('http://sodahair.com/image/catalog/demo/slider/logo-2.png') no-repeat scroll 0 16px rgba(0, 0, 0, 0);
+  width: 200px;
+  height: 70px;
 }
 #header-main #logo-theme a span {
   display: none;
@@ -3776,6 +3776,15 @@ body,
     .social_wep {
 	  display:none !important;
   }
+  .border-top: {
+	display: block !important;
+}
+#footer {
+    display: none !important;
+}
+#powered {
+    display: none !important;
+}
 }
 @media only screen and (min-width: 600px) and (max-width: 766px) {
 /*  .tp-caption,
@@ -3804,14 +3813,14 @@ body,
   .social_wep {
 	  display:none !important;
   }
-  .border-top: {
-	display: block;
+.border-top: {
+	display: block !important;
 }
 #footer {
-    display: none;
+    display: none !important;
 }
 #powered {
-    display: none;
+    display: none !important;
 }
 }
 /* Iphone 4 landscape */
@@ -3882,13 +3891,13 @@ body,
     margin: 0px !important;
 }
 .border-top: {
-	display: block;
+	display: block !important;
 }
 #footer {
-    display: none;
+    display: none !important;
 }
 #powered {
-    display: none;
+    display: none !important;
 }
 }
 /* Iphone 4 + 5 Portrait */
@@ -3945,13 +3954,13 @@ body,
     margin: 0px !important;
 }
 .border-top: {
-	display: block;
+	display: block !important;
 }
 #footer {
-    display: none;
+    display: none !important;
 }
 #powered {
-    display: none;
+    display: none !important;
 }
 }
 /* Large desktop */
@@ -3986,6 +3995,15 @@ body,
     .social_wep {
 	  display:none !important;
   }
+  .border-top: {
+	display: block !important;
+}
+#footer {
+    display: none !important;
+}
+#powered {
+    display: none !important;
+}
 }
 /* Iphone 5 landscape */
 
@@ -4011,7 +4029,7 @@ body,
 	margin-bottom: 1rem
 }
 .line-height-4 {
-	line-height: 2
+	text-align:center;
 }
 .medium {
 	font-weight: 500
