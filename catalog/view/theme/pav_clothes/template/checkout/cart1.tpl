@@ -125,9 +125,8 @@
       <a href="<?php echo $checkout; ?>" data-test="paypal-checkout" class="btn col-12 h3 btn-large btn-primary white ">
        <div>
         <div>
-         <!-- react-text: 648 -->Check out with 
+         <!-- react-text: 648 -->Check out
          <!-- /react-text -->
-         <span class="medium italic">PayPal™</span>
         </div>
        </div></a>
      </div>
