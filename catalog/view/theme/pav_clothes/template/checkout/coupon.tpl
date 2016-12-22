@@ -1,15 +1,11 @@
 <div>
-  <div>
-    <h2><?php echo $heading_title; ?> </h2>
-  </div>
   <div id="collapse-coupon">
     <div>
-      <p><?php echo $entry_coupon; ?></p>
-      <div class="input-group">
-        <input type="text" name="coupon" value="<?php echo $coupon; ?>" placeholder="<?php echo $entry_coupon; ?>" id="input-coupon" />
-        <div>
-        <input type="button" value="<?php echo $button_coupon; ?>" id="button-coupon" data-loading-text="<?php echo $text_loading; ?>"  class="button" />
-        </div></div></br>
+      <div>
+        <input class="col-8 pr1 h4 floating-label--input" type="text" name="coupon" value="<?php echo $coupon; ?>" placeholder="<?php echo $entry_coupon; ?>" id="input-coupon" />
+
+        <input type="button" value="<?php echo $button_coupon; ?>" id="button-coupon" data-loading-text="<?php echo $text_loading; ?>"  class="col-4 btn btn-primary" />
+</div></br>
       <script type="text/javascript"><!--
 $('#button-coupon').on('click', function() {
 	$.ajax({

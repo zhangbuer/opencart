@@ -46,11 +46,11 @@
      <?php foreach ($products as $product): ?>
      <div class="clearfix mb1 border-bottom border-dark-silver py2">
      <?php if ($product['thumb']) { ?>
-                  <a href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-thumbnail" /></a>
+                  <a class="left mr1" href="<?php echo $product['href']; ?>"><img src="<?php echo $product['thumb']; ?>" alt="<?php echo $product['name']; ?>" title="<?php echo $product['name']; ?>" class="img-thumbnail" /></a>
                   <?php } ?>
       <div class="overflow-hidden h5 dark-gray p1">
        <a href="<?php echo $product['href']; ?>"><?php echo $product['name']; ?></a>
-       <div class="mt1 h6 line-height-2">
+       <div class="h6 line-height-2">
         <?php if (!$product['stock']) { ?>
                   <span class="text-danger">***</span>
                   <?php } ?>
@@ -69,7 +69,7 @@
                   <span class="label label-info"><?php echo $text_recurring_item; ?></span> <small><?php echo $product['recurring']; ?></small>
                   <?php } ?>
                   
-        <div>model:<?php echo $product['model']; ?></div>
+        <div>Model:<?php echo $product['model']; ?></div>
         <div class="mt2 flex items-center justify-between">
         
         <div class="input-group btn-block" style="max-width: 200px;">
@@ -79,23 +79,12 @@
                     <button type="button" data-toggle="tooltip" title="<?php echo $button_remove; ?>" class="button" onclick="cart.remove('<?php echo $product['key']; ?>');"><i class="fa fa-times-circle"></i></button></span>
                         
         </div>
-         <div class="h3">
-          <div>
-           <a href="#" data-test="quantity-dec" class="col">
-            <svg class="stroke-white fill-dark-silver" style="width: 1.2em; height: 1.2em;">
-             <use xlink:href="#counter-dec" />
-            </svg></a>
-           <a href="#" data-test="quantity-inc" class="col">
-            <svg class="stroke-white fill-dark-silver" style="width: 1.2em; height: 1.2em;">
-             <use xlink:href="#counter-inc" />
-            </svg></a>
-          </div>
-         </div>
         </div>
        </div>
       </div>
      </div>
      <?php endforeach; ?>
+       <img src="http://sodahair.com/image/catalog/demo/slider/cards.png">
     </div>
     <div class="col-on-tb-dt col-6-on-tb-dt px3">
       
@@ -133,7 +122,7 @@
      -->
      
      <div class="pb2">
-      <a href="<?php echo $checkout; ?>" data-test="paypal-checkout" class="btn col-12 h3 btn-large btn-primary bg-aqua white ">
+      <a href="<?php echo $checkout; ?>" data-test="paypal-checkout" class="btn col-12 h3 btn-large btn-primary white ">
        <div>
         <div>
          <!-- react-text: 648 -->Check out with 
@@ -157,13 +146,14 @@
      </div>
     </div>
    </div>
+   </div>
 </form>
 </div>
    <!--<div class="buttons">
         <div class="pull-left"><a href="<?php echo $continue; ?>" class="button btn"><?php echo $button_shopping; ?></a></div>
         <div class="pull-right"><a href="<?php echo $checkout; ?>" class="button btn"><?php echo $button_checkout; ?></a></div>
       </div>-->
-      <?php echo $content_bottom; ?></div>
+      <?php echo $content_bottom; ?>
    </section> 
 <?php if( $SPAN[2] ): ?>
   <aside id="sidebar-right" class="col-md-<?php echo $SPAN[2];?>">
@@ -171,4 +161,16 @@
   </aside>
 <?php endif; ?></div>
 </div>
-<?php echo $footer; ?> 
+<div class="border-top border-dark-silver bg-white">
+          <div class="container">
+          <div class=" px3 my2 line-height-4">
+              <div class="medium f4 gray">FOLLOW US</div>
+              <div style="font-weight: bold; font-size: 30px; padding: 0px;"> <a href=" https://www.facebook.com/sodahairweave/" class="fb fa fa-facebook-square"></a>                                                                          <a href="https://www.instagram.com/sodahairweave/" class="twit  fa fa-linkedin-square"></a>                                                                         <a href="https://www.pinterest.com/sodahairweave/" class="gogl fa fa-pinterest-square"></a>
+<a href="https://www.youtube.com/channel/UC9T-VzhgNJ3AssY9NZPD6KQ" class="fa fa-youtube-square"></a></div>
+            </div>
+            <div class="px3 my2 line-height-4">
+              <div class="medium f4 gray">Need Help?</div>
+              <div class="gray light f5"><span class="hide-on-tb-dt"></span><span class="hide-on-mb">+1 (646) 934-6206</span><!-- react-text: 535 --> | info@sodahair.com<!-- /react-text --></div>
+            </div>
+          </div>
+        </div>

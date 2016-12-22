@@ -3590,10 +3590,12 @@ body,
 .pavo-widget .widget-inner {
   margin-top: 20PX;
 }
+#button-coupon {
+    margin-top: -8px;
+}
 #input-coupon {
     margin-bottom: 10px;
     padding: 5px;
-    width: 250px;
 }
 #original_price {
     color: #999;

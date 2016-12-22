@@ -78,12 +78,7 @@ html {
 	-webkit-font-smoothing: antialiased
 }
 }
-body {
-	min-width: 320px;
-	max-width: 1440px;
-	margin: 0 auto;
-	font-family: Graphik, -apple-system, BlinkMacSystemFont, helvetica neue, helvetica, Ubuntu, segoe ui, arial, sans-serif
-}
+
 h1, h2, h3, h4, h5, h6 {
 	font-family: Graphik, -apple-system, BlinkMacSystemFont, helvetica neue, helvetica, Ubuntu, segoe ui, arial, sans-serif;
 	font-weight: 400;
@@ -159,7 +154,7 @@ padding:0
 }
 .btn-primary {
 	color: #fff;
-	background-color: #40cbac;
+	background-color: #92278F;
 	border-radius: 4px
 }
 .btn-primary.is-hover, .btn-primary:hover {
@@ -814,7 +809,8 @@ padding-right:.5rem
 	padding-right: 1rem
 }
 .pb2 {
-	padding-bottom: 1rem
+	padding-bottom: 1rem;
+	margin-top: 10px;
 }
 .pl2 {
 	padding-left: 1rem
