@@ -1,6 +1,8 @@
 server {
     listen 80;
+    listen 443 ssl;
     server_name sodahair.com *.sodahair.com;
+    ssl_certificate sodahair.crt;
     if ($host != 'sodahair.com' ) {
         rewrite ^/(.*)$ http://sodahair.com/$1 permanent;
     }
