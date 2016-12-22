@@ -4,7 +4,7 @@
       <div>
         <input class="col-8 pr1 h4 floating-label--input" type="text" name="coupon" value="<?php echo $coupon; ?>" placeholder="<?php echo $entry_coupon; ?>" id="input-coupon" />
 
-        <input type="button" value="<?php echo $button_coupon; ?>" id="button-coupon" data-loading-text="<?php echo $text_loading; ?>"  class="col-4 btn btn-primary" />
+        <input type="button" value="<?php echo $button_coupon; ?>" id="button-coupon" data-loading-text="<?php echo $text_loading; ?>"  class="btn btn-primary" />
 </div></br>
       <script type="text/javascript"><!--
 $('#button-coupon').on('click', function() {
