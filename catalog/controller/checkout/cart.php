@@ -1,6 +1,6 @@
 <?php
 class ControllerCheckoutCart extends Controller {
-	public function index() {
+	public function index1() {
 		$this->load->language('checkout/cart');
 
 		$this->document->setTitle($this->language->get('heading_title'));
@@ -276,7 +276,7 @@ class ControllerCheckoutCart extends Controller {
 		}
 	}
 
-	public function index1() {
+	public function index() {
 	    $this->load->language('checkout/cart');
 
 	    $this->document->setTitle($this->language->get('heading_title'));
