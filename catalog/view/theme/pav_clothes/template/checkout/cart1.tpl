@@ -122,7 +122,7 @@
      -->
      
      <div class="pb2">
-      <a href="<?php echo $checkout; ?>" data-test="paypal-checkout" class="btn col-12 h3 btn-large btn-primary white ">
+      <a href="/index.php?route=payment/pp_express/express&landingpage=Login" data-test="paypal-checkout" class="btn col-12 h3 btn-large btn-primary white ">
        <div>
         <div>
          <!-- react-text: 648 -->Check out

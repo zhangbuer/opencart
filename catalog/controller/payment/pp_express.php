@@ -19,6 +19,7 @@ class ControllerPaymentPPExpress extends Controller {
 	}
 
 	public function express() {
+	    $landingpage = isset($this->request->get['landingpage']) ? (string)$this->request->get['landingpage']:'Billing'; // Login or Billing
 		if ((!$this->cart->hasProducts() && empty($this->session->data['vouchers'])) || (!$this->cart->hasStock() && !$this->config->get('config_stock_checkout'))) {
 			$this->log->write('No product redirect');
 
@@ -76,7 +77,7 @@ class ControllerPaymentPPExpress extends Controller {
 			'NOSHIPPING'         => $shipping,
 			'ALLOWNOTE'          => $this->config->get('pp_express_allow_note'),
 			'LOCALECODE'         => 'EN',
-			'LANDINGPAGE'        => 'Billing',
+			'LANDINGPAGE'        => $landingpage,
 			'HDRIMG'             => $this->model_tool_image->resize($this->config->get('pp_express_logo'), 790, 90),
 			'PAYFLOWCOLOR'       => $this->config->get('pp_express_page_colour'),
 			'CHANNELTYPE'        => 'Merchant'
