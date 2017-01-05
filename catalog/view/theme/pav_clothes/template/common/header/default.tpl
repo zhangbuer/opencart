@@ -1,6 +1,6 @@
-<div class="top_banner" style="background: rgb(210, 0, 0) none repeat scroll 0% 0%;">
+<!--<div class="top_banner" style="background: rgb(210, 0, 0) none repeat scroll 0% 0%;">
   <div background-color="#d20000" class="lazyload ma_lazyload" style="text-align: center;"><img  src="http://sodahair.com/image/catalog/demo/slider/20161201100429.jpg"> </div>
-</div>
+</div>-->
 
 <div id="header">
 <nav id="topbar" class="topbar clearfix">

@@ -150,15 +150,16 @@
 </div>
 <div class="border-top border-dark-silver bg-white" style="display:none;">
           <div class="container">
+          <div class="px3 my2 line-height-4">
+              <div class="medium f4 gray">Need Help?</div>
+              <div class="gray light f5"><span class="hide-on-tb-dt"></span><span class="hide-on-mb">+1 (646) 934-6206</span><!-- react-text: 535 --> | info@sodahair.com<!-- /react-text --></div>
+            </div>
           <div class=" px3 my2 line-height-4">
               <div class="medium f4 gray">FOLLOW US</div>
               <div style="font-weight: bold; font-size: 30px; padding: 0px;"> <a href=" https://www.facebook.com/sodahairweave/" class="fb fa fa-facebook-square"></a>                                                                          <a href="https://www.instagram.com/sodahairweave/" class="twit  fa fa-linkedin-square"></a>                                                                         <a href="https://www.pinterest.com/sodahairweave/" class="gogl fa fa-pinterest-square"></a>
 <a href="https://www.youtube.com/channel/UC9T-VzhgNJ3AssY9NZPD6KQ" class="fa fa-youtube-square"></a></div>
             </div>
-            <div class="px3 my2 line-height-4">
-              <div class="medium f4 gray">Need Help?</div>
-              <div class="gray light f5"><span class="hide-on-tb-dt"></span><span class="hide-on-mb">+1 (646) 934-6206</span><!-- react-text: 535 --> | info@sodahair.com<!-- /react-text --></div>
-            </div>
+            
           </div>
         </div>
 <?php if( $helper->getConfig('enable_paneltool',0) ){  ?>
