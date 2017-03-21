@@ -706,8 +706,6 @@ body.layout-boxed-lg #page {
 #header-main {
   border-bottom: 1px solid #eee;
   min-height: 67px;
-  background: #fff url("http://sodahair.com/image/catalog/demo/slider/header-bg.png") no-repeat scroll center -10px !important;
-  padding-top: 50px;
 }
 #logo {
   padding: 14px 80px 14px 0;
